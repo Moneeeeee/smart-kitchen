@@ -41,3 +41,5 @@
 1	3281	7316023775751400	CMakeFiles/Firmware.elf.dir/Core/Src/FAN.c.obj	fef4037cf9b1d42d
 2	238	7316024062906344	CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj	e5b3289dd6906303
 2	124	7316024247687014	CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj	1ee95c5b2d8e67e9
+1	127	7316030469321620	CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj	7f4c7dba3f15c566
+128	338	7316030470936361	Firmware.elf	9ee371611994bfa1
