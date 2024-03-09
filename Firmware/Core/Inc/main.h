@@ -45,6 +45,9 @@ extern "C" {
 #include "LED.h"
 #include "BEEP.h"
 #include "FAN.h"
+#include "esp8266.h"
+#include "onenet.h"
+#include "MqttKit.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -54,7 +57,8 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-
+extern unsigned char esp8266_buf[128];
+extern unsigned short esp8266_cnt , esp8266_cntPre ;
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
@@ -94,6 +98,8 @@ void Error_Handler(void);
 #define Debug_TX_GPIO_Port GPIOA
 #define Debug_RX_Pin GPIO_PIN_10
 #define Debug_RX_GPIO_Port GPIOA
+#define ESP_RST_Pin GPIO_PIN_3
+#define ESP_RST_GPIO_Port GPIOB
 #define KEY3_Pin GPIO_PIN_4
 #define KEY3_GPIO_Port GPIOB
 #define KEY3B5_Pin GPIO_PIN_5

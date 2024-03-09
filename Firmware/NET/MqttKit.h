@@ -28,22 +28,22 @@
 
 typedef struct Buffer
 {
-	
-	uint8	*_data;		//协议数据
-	
-	uint32	_len;		//写入的数据长度
-	
-	uint32	_size;		//缓存总大小
-	
-	uint8	_memFlag;	//内存使用的方案：0-未分配	1-使用的动态分配		2-使用的固定内存
-	
+
+    uint8	*_data;		//协议数据
+
+    uint32	_len;		//写入的数据长度
+
+    uint32	_size;		//缓存总大小
+
+    uint8	_memFlag;	//内存使用的方案：0-未分配	1-使用的动态分配		2-使用的固定内存
+
 } MQTT_PACKET_STRUCTURE;
 
 
 /*--------------------------------固定头部消息类型--------------------------------*/
 enum MqttPacketType
 {
-	
+
     MQTT_PKT_CONNECT = 1, /**< 连接请求数据包 */
     MQTT_PKT_CONNACK,     /**< 连接确认数据包 */
     MQTT_PKT_PUBLISH,     /**< 发布数据数据包 */
@@ -58,29 +58,29 @@ enum MqttPacketType
     MQTT_PKT_PINGREQ,     /**< ping 数据包 */
     MQTT_PKT_PINGRESP,    /**< ping 响应数据包 */
     MQTT_PKT_DISCONNECT,  /**< 断开连接数据包 */
-	
-	//新增
-	
-	MQTT_PKT_CMD  		 /**< 命令下发数据包 */
-	
+
+    //新增
+
+    MQTT_PKT_CMD  		 /**< 命令下发数据包 */
+
 };
 
 
 /*--------------------------------MQTT QOS等级--------------------------------*/
 enum MqttQosLevel
 {
-	
+
     MQTT_QOS_LEVEL0,  /**< 最多发送一次 */
     MQTT_QOS_LEVEL1,  /**< 最少发送一次  */
     MQTT_QOS_LEVEL2   /**< 只发送一次 */
-	
+
 };
 
 
 /*--------------------------------MQTT 连接请求标志位，内部使用--------------------------------*/
 enum MqttConnectFlag
 {
-	
+
     MQTT_CONNECT_CLEAN_SESSION  = 0x02,
     MQTT_CONNECT_WILL_FLAG      = 0x04,
     MQTT_CONNECT_WILL_QOS0      = 0x00,
@@ -89,7 +89,7 @@ enum MqttConnectFlag
     MQTT_CONNECT_WILL_RETAIN    = 0x20,
     MQTT_CONNECT_PASSORD        = 0x40,
     MQTT_CONNECT_USER_NAME      = 0x80
-	
+
 };
 
 
@@ -109,9 +109,9 @@ uint8 MQTT_UnPacketRecv(uint8 *dataPtr);
 
 /*--------------------------------登录组包--------------------------------*/
 uint8 MQTT_PacketConnect(const int8 *user, const int8 *password, const int8 *devid,
-						uint16 cTime, uint1 clean_session, uint1 qos,
-						const int8 *will_topic, const int8 *will_msg, int32 will_retain,
-						MQTT_PACKET_STRUCTURE *mqttPacket);
+                         uint16 cTime, uint1 clean_session, uint1 qos,
+                         const int8 *will_topic, const int8 *will_msg, int32 will_retain,
+                         MQTT_PACKET_STRUCTURE *mqttPacket);
 
 /*--------------------------------断开连接组包--------------------------------*/
 uint1 MQTT_PacketDisConnect(MQTT_PACKET_STRUCTURE *mqttPacket);
@@ -145,9 +145,9 @@ uint1 MQTT_UnPacketUnSubscribe(uint8 *rev_data);
 
 /*--------------------------------发布主题组包--------------------------------*/
 uint8 MQTT_PacketPublish(uint16 pkt_id, const int8 *topic,
-						const int8 *payload, uint32 payload_len,
-						enum MqttQosLevel qos, int32 retain, int32 own,
-						MQTT_PACKET_STRUCTURE *mqttPacket);
+                         const int8 *payload, uint32 payload_len,
+                         enum MqttQosLevel qos, int32 retain, int32 own,
+                         MQTT_PACKET_STRUCTURE *mqttPacket);
 
 /*--------------------------------发布消息回复解包--------------------------------*/
 uint8 MQTT_UnPacketPublish(uint8 *rev_data, int8 **topic, uint16 *topic_len, int8 **payload, uint16 *payload_len, uint8 *qos, uint16 *pkt_id);

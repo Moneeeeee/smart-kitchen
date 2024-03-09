@@ -81,7 +81,8 @@ void MX_USART3_UART_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN USART3_Init 2 */
-
+  __HAL_UART_ENABLE_IT(&huart3, UART_IT_RXNE);
+  __HAL_UART_ENABLE_IT(&huart3, UART_IT_IDLE);
   /* USER CODE END USART3_Init 2 */
 
 }
@@ -145,6 +146,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
     HAL_NVIC_EnableIRQ(USART3_IRQn);
   /* USER CODE BEGIN USART3_MspInit 1 */
 
+
   /* USER CODE END USART3_MspInit 1 */
   }
 }
@@ -193,5 +195,20 @@ void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
 }
 
 /* USER CODE BEGIN 1 */
+
+void Usart_SendString(UART_HandleTypeDef USARTx, unsigned char *str, unsigned short len)
+{
+
+    unsigned short count = 0;
+
+    for(; count < len; count++)
+    {
+        HAL_UART_Transmit (&USARTx ,(uint8_t *)str++,1,HAL_MAX_DELAY );									//发送数据
+    }
+
+}
+
+
+
 
 /* USER CODE END 1 */

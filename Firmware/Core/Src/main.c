@@ -68,8 +68,11 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+    extern uint8_t aRxBuffer;
+    unsigned short timeCount = 0;	//发送间隔变量
+    unsigned char *dataPtr = NULL;
 
-  /* USER CODE END 1 */
+    /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -100,29 +103,39 @@ int main(void)
   OLED_Init();                           //OLED初始
   OLED_Clear();                         //清屏
 
+  printf("The USART1 is OK!\r\n");
+  HAL_UART_Receive_IT(&huart3, (uint8_t *)&aRxBuffer, 1); //串口2接收中断初始化
+  ESP01S_Init();  //8266初始化
+  while(OneNet_DevLink())  //接入onenet
+  ESP01S_Clear();    //
+  printf("Init is OK!\r\n");
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+      if(++timeCount >= 80)									//上传数据约3s一次
+      {
+          //DHT11(  );
+          printf("OneNet_SendData\r\n");
+          OneNet_SendData( );
+          timeCount = 0;
+          ESP01S_Clear( );
+      }
 
-//      Buzzer_Beep(100,100,3);
+
+      dataPtr = ESP01S_GetIPD(3);//完成需要15个毫秒，三次循环，一次5个毫秒
+      if(dataPtr != NULL)
+      {
+          OneNet_RevPro(dataPtr);
+      }
+      HAL_Delay(10);
+
       HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
-//      uint16_t a  = 0;
-//      a = ADC_IN_1();
-//      OLED_ShowNum(80,10,a,4,16, 0);
-//      printf("%d",a);
-//      if(DHT_Read())
-//      {
-//          HAL_UART_Transmit(&huart1,(uint8_t *)Data+0,(uint16_t)sizeof(Data[0]),HAL_MAX_DELAY);    //湿度
-//          HAL_UART_Transmit(&huart1,(uint8_t *)Data+2,(uint16_t)sizeof(Data[2]),HAL_MAX_DELAY);    //温度
-//          OLED_ShowString(0,0,"Tempr:",16, 0);
-//          OLED_ShowNum(80,0,Data[2],4,16, 0);
-//          OLED_ShowString(0,10,"Sensity:",16, 0);
-//          OLED_ShowNum(80,10,Data[0],4,16, 0);
-//      }
-      HAL_Delay(50);
+
+      HAL_Delay(100);
 
     /* USER CODE END WHILE */
 
