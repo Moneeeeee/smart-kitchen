@@ -20,27 +20,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06db18f9-152e-455a-9538-8957cb992f2a" name="Changes" comment="USART3-&gt;USART2">
+    <list default="true" id="06db18f9-152e-455a-9538-8957cb992f2a" name="Changes" comment="Successful connect WiFi!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Inc/usart.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/usart.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NET/esp8266.c" beforeDir="false" afterPath="$PROJECT_DIR$/NET/esp8266.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NET/esp8266.h" beforeDir="false" afterPath="$PROJECT_DIR$/NET/esp8266.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NET/onenet.c" beforeDir="false" afterPath="$PROJECT_DIR$/NET/onenet.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NET/onenet.h" beforeDir="false" afterPath="$PROJECT_DIR$/NET/onenet.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,7 +170,7 @@
       <workItem from="1710050377816" duration="1922000" />
       <workItem from="1710057548271" duration="2650000" />
       <workItem from="1710062118763" duration="282000" />
-      <workItem from="1710062410545" duration="10192000" />
+      <workItem from="1710062410545" duration="15470000" />
     </task>
     <task id="LOCAL-00001" summary="Initial:Upload the 0.0.1 version of a smart kitchen.">
       <option name="closed" value="true" />
@@ -292,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710063424054</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Successful connect WiFi!">
+      <option name="closed" value="true" />
+      <created>1710077208001</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710077208001</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +320,7 @@
     <MESSAGE value="Initial" />
     <MESSAGE value="Can't Initial ESP8266" />
     <MESSAGE value="USART3-&gt;USART2" />
-    <option name="LAST_COMMIT_MESSAGE" value="USART3-&gt;USART2" />
+    <MESSAGE value="Successful connect WiFi!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful connect WiFi!" />
   </component>
 </project>

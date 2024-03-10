@@ -68,7 +68,11 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+    const char *topics[] = {"/mysmartkitchen/sub"};
 
+    unsigned short timeCount = 0;	//发送间隔变量
+
+    unsigned char *dataPtr = NULL;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -109,6 +113,9 @@ int main(void)
   ESP01S_Init();  //8266初始
   while(OneNet_DevLink())  //接入onenet
   ESP01S_Clear();    //
+
+  OneNet_Subscribe(topics, 1);
+
   printf("Init is OK!\r\n");
 
 
@@ -137,14 +144,26 @@ int main(void)
 
   while (1)
   {
-//      char myString[] = "AT\r\n";
-//      Usart_SendString(huart2, (unsigned char *)myString, strlen(myString)),1000;
 
-//      printf("%s\r\n",ESP01S_buf);
-//      printf("%d,%d\r\n",ESP01S_cnt,ESP01S_cntPre);
+      if(++timeCount >= 50)									//发送间隔5s
+      {
+
+          printf("OneNet_Publish\r\n");
+
+          OneNet_Publish("pcTopic", "MQTT Publish Test");
+
+          timeCount = 0;
+          ESP01S_Clear();
+      }
+      dataPtr = ESP01S_GetIPD(0);
+
+
+      if(dataPtr != NULL)
+          OneNet_RevPro(dataPtr);
+
       HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
 
-      HAL_Delay(1000);
+      HAL_Delay(100);
 
     /* USER CODE END WHILE */
 
