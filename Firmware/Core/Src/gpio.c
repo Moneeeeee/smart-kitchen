@@ -58,7 +58,7 @@ void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, DHT11_Pin|BEEP_Pin|ESP_RST_Pin, GPIO_PIN_RESET);
-
+    HAL_GPIO_WritePin(GPIOB, ESP_RST_Pin, GPIO_PIN_SET);
   /*Configure GPIO pin : PtPin */
   GPIO_InitStruct.Pin = LED_Test_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;

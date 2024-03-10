@@ -68,9 +68,6 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-    extern uint8_t aRxBuffer;
-    unsigned short timeCount = 0;
-    unsigned char *dataPtr = NULL;
 
   /* USER CODE END 1 */
 
@@ -105,12 +102,15 @@ int main(void)
   OLED_Clear();                         //清屏
 
 
-//  printf("The USART1 is OK!\r\n");
-//  HAL_UART_Receive_IT(&huart2, (uint8_t *)&aRxBuffer, 1); //串口2接收中断
-//  ESP01S_Init();  //8266初始
-////  while(OneNet_DevLink())  //接入onenet
-////  ESP01S_Clear();    //
-//  printf("Init is OK!\r\n");
+
+
+  printf("The USART1 is OK!\r\n");
+  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+  ESP01S_Init();  //8266初始
+  while(OneNet_DevLink())  //接入onenet
+  ESP01S_Clear();    //
+  printf("Init is OK!\r\n");
+
 
     OLED_ShowString(0,0,"UNICORN_LI",16, 1);    //反相显示8X16�?
     OLED_ShowString(0,2,"unicorn_li_123",12,0);//正相显示6X8�?
@@ -137,15 +137,14 @@ int main(void)
 
   while (1)
   {
-//      char myString[] = "Hello USART2!\r\n";
-////      HAL_UART_Transmit(&huart2, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
-//      HAL_StatusTypeDef status = HAL_UART_Transmit(&huart2, (uint8_t*)myString, strlen(myString), 1000);
+//      char myString[] = "AT\r\n";
+//      Usart_SendString(huart2, (unsigned char *)myString, strlen(myString)),1000;
 
-//      HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
-//      HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
+//      printf("%s\r\n",ESP01S_buf);
+//      printf("%d,%d\r\n",ESP01S_cnt,ESP01S_cntPre);
       HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
 
-      HAL_Delay(100);
+      HAL_Delay(1000);
 
     /* USER CODE END WHILE */
 
@@ -201,6 +200,24 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+
+    if(ESP01S_cnt >= sizeof(ESP01S_buf))  //溢出判断
+    {
+        ESP01S_cnt = 0;
+        memset(ESP01S_buf,0x00,sizeof(ESP01S_buf));
+        HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
+    }
+    else
+    {
+        ESP01S_buf[ESP01S_cnt++] = aRxBuffer;   //接收数据转存
+//		  if(aRxBuffer=='1')  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+//        if(aRxBuffer=='0')  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
+    }
+
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中断
+}
 
 /* USER CODE END 4 */
 

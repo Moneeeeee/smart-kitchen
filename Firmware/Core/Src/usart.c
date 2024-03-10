@@ -21,6 +21,12 @@
 #include "usart.h"
 
 /* USER CODE BEGIN 0 */
+
+
+volatile uint8_t rxBuffer[RX_BUFFER_SIZE];
+volatile uint16_t rxIndex = 0;
+
+
 /* USER CODE END 0 */
 
 UART_HandleTypeDef huart1;
@@ -82,6 +88,7 @@ void MX_USART2_UART_Init(void)
   /* USER CODE BEGIN USART2_Init 2 */
     HAL_NVIC_SetPriority(USART2_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(USART2_IRQn);
+    __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE); //开启串口空闲中断
   /* USER CODE END USART2_Init 2 */
 
 }
