@@ -33,6 +33,7 @@ extern "C" {
 /* USER CODE BEGIN Includes */
 #include "stdint.h"
 #include "stdint-gcc.h"
+#include "string.h"
 #include "retarget.h"
 #include "OLED.h"
 #include "DHT11.h"
@@ -59,6 +60,7 @@ extern "C" {
 /* USER CODE BEGIN EC */
 extern unsigned char esp8266_buf[128];
 extern unsigned short esp8266_cnt , esp8266_cntPre ;
+
 /* USER CODE END EC */
 
 /* Exported macro ------------------------------------------------------------*/
@@ -78,22 +80,18 @@ void Error_Handler(void);
 #define LED_Test_GPIO_Port GPIOC
 #define LED_Pin GPIO_PIN_1
 #define LED_GPIO_Port GPIOA
-#define MQ_2_Pin GPIO_PIN_2
-#define MQ_2_GPIO_Port GPIOA
-#define STEER_Pin GPIO_PIN_3
-#define STEER_GPIO_Port GPIOA
 #define FAN_Pin GPIO_PIN_4
 #define FAN_GPIO_Port GPIOA
 #define MOTO_Pin GPIO_PIN_5
 #define MOTO_GPIO_Port GPIOA
+#define MQ_2_Pin GPIO_PIN_7
+#define MQ_2_GPIO_Port GPIOA
 #define DHT11_Pin GPIO_PIN_0
 #define DHT11_GPIO_Port GPIOB
 #define BEEP_Pin GPIO_PIN_1
 #define BEEP_GPIO_Port GPIOB
-#define ESP_TX_Pin GPIO_PIN_10
-#define ESP_TX_GPIO_Port GPIOB
-#define ESP_RX_Pin GPIO_PIN_11
-#define ESP_RX_GPIO_Port GPIOB
+#define STEER_Pin GPIO_PIN_10
+#define STEER_GPIO_Port GPIOB
 #define Debug_TX_Pin GPIO_PIN_9
 #define Debug_TX_GPIO_Port GPIOA
 #define Debug_RX_Pin GPIO_PIN_10

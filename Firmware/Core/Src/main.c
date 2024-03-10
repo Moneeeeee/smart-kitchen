@@ -69,10 +69,10 @@ int main(void)
 {
   /* USER CODE BEGIN 1 */
     extern uint8_t aRxBuffer;
-    unsigned short timeCount = 0;	//发送间隔变量
+    unsigned short timeCount = 0;
     unsigned char *dataPtr = NULL;
 
-    /* USER CODE END 1 */
+  /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
 
@@ -95,44 +95,54 @@ int main(void)
   MX_USART1_UART_Init();
   MX_I2C1_Init();
   MX_TIM1_Init();
+  MX_TIM2_Init();
+  MX_USART2_UART_Init();
   MX_ADC1_Init();
-  MX_USART3_UART_Init();
   /* USER CODE BEGIN 2 */
   RetargetInit(&huart1);
   BEEP_Init();
   OLED_Init();                           //OLED初始
   OLED_Clear();                         //清屏
 
-  printf("The USART1 is OK!\r\n");
-  HAL_UART_Receive_IT(&huart3, (uint8_t *)&aRxBuffer, 1); //串口2接收中断初始化
-  ESP01S_Init();  //8266初始化
-  while(OneNet_DevLink())  //接入onenet
-  ESP01S_Clear();    //
-  printf("Init is OK!\r\n");
 
+//  printf("The USART1 is OK!\r\n");
+//  HAL_UART_Receive_IT(&huart2, (uint8_t *)&aRxBuffer, 1); //串口2接收中断
+//  ESP01S_Init();  //8266初始
+////  while(OneNet_DevLink())  //接入onenet
+////  ESP01S_Clear();    //
+//  printf("Init is OK!\r\n");
+
+    OLED_ShowString(0,0,"UNICORN_LI",16, 1);    //反相显示8X16�?
+    OLED_ShowString(0,2,"unicorn_li_123",12,0);//正相显示6X8�?
+
+
+
+    OLED_ShowCHinese(0,4,0,1); //反相显示汉字“独
+    OLED_ShowCHinese(16,4,1,1);//反相显示汉字“角
+    OLED_ShowCHinese(32,4,2,1);//反相显示汉字“兽
+    OLED_ShowCHinese(0,6,0,0); //正相显示汉字“独
+    OLED_ShowCHinese(16,6,1,0);//正相显示汉字�?
+    OLED_ShowCHinese(32,6,2,0);//正相显示汉字�?
+
+    OLED_ShowNum(48,4,6,1,16, 0);//正相显示1
+    OLED_ShowNum(48,7,77,2,12, 1);//反相显示
+    OLED_DrawBMP(90,0,122, 4,BMP1,0);//正相显示图片BMP1
+    OLED_DrawBMP(90,4,122, 8,BMP1,1);//反相显示图片BMP1
+
+    OLED_HorizontalShift(0x26);//全屏水平向右滚动播放
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+
   while (1)
   {
-      if(++timeCount >= 80)									//上传数据约3s一次
-      {
-          //DHT11(  );
-          printf("OneNet_SendData\r\n");
-          OneNet_SendData( );
-          timeCount = 0;
-          ESP01S_Clear( );
-      }
+//      char myString[] = "Hello USART2!\r\n";
+////      HAL_UART_Transmit(&huart2, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
+//      HAL_StatusTypeDef status = HAL_UART_Transmit(&huart2, (uint8_t*)myString, strlen(myString), 1000);
 
-
-      dataPtr = ESP01S_GetIPD(3);//完成需要15个毫秒，三次循环，一次5个毫秒
-      if(dataPtr != NULL)
-      {
-          OneNet_RevPro(dataPtr);
-      }
-      HAL_Delay(10);
-
+//      HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
+//      HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
       HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
 
       HAL_Delay(100);

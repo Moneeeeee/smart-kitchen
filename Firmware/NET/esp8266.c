@@ -14,8 +14,8 @@
 #include <string.h>
 
 
-#define ESP01S_WIFI_INFO		"AT+CWJAP=\"OPPOA93\",\"12345678\"\r\n"
-#define ESP01S_ONENET_INFO		"AT+CIPSTART=\"TCP\",\"183.230.40.39\",6002\r\n"
+#define ESP01S_WIFI_INFO		"AT+CWJAP=\"iPhone\",\"20050623\"\r\n"
+#define ESP01S_ONENET_INFO		"AT+CIPSTART=\"TCP\",\"broker.emqx.io\",1883\r\n"
 
 unsigned char ESP01S_buf[128];
 unsigned short ESP01S_cnt = 0, ESP01S_cntPre = 0;
@@ -87,12 +87,14 @@ _Bool ESP01S_SendCmd(char *cmd, char *res)
 
     unsigned char timeOut = 200;
 
-    Usart_SendString(huart3, (unsigned char *)cmd, strlen((const char *)cmd));
+    Usart_SendString(huart2, (unsigned char *)cmd, strlen((const char *)cmd));
 
     while(timeOut--)
     {
+        printf("1\r\n");
         if(ESP01S_WaitRecive() == REV_OK)							//如果收到数据
         {
+            printf("2\r\n");
             if(strstr((const char *)ESP01S_buf, res) != NULL)		//如果检索到关键词
             {
                 ESP01S_Clear();									//清空缓存
@@ -129,7 +131,7 @@ void ESP01S_SendData(unsigned char *data, unsigned short len)
     sprintf(cmdBuf, "AT+CIPSEND=%d\r\n", len);		//发送命令
     if(!ESP01S_SendCmd(cmdBuf, ">"))				//收到‘>’时可以发送数据
     {
-        Usart_SendString(huart3, data, len);		//发送设备连接请求数据
+        Usart_SendString(huart2, data, len);		//发送设备连接请求数据
     }
 
 }
@@ -200,8 +202,7 @@ void ESP01S_Init(void)
     ESP01S_Clear();
 
     printf("0. AT\r\n");
-    while(ESP01S_SendCmd("AT\r\n", "OK"))
-        printf("%d\r\n",ESP01S_SendCmd("AT\r\n", "OK"));
+    while(ESP01S_SendCmd("AT\r\n", "OK"));
         HAL_Delay(500);
 
     printf("1. RST\r\n");
@@ -236,24 +237,26 @@ void ESP01S_Init(void)
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 
-    UNUSED(huart);
+    if (huart->Instance == USART2) {
+        printf("Callback Success\r\n");
+        if(ESP01S_cnt >= sizeof(ESP01S_buf))  //溢出判断
+        {
+            ESP01S_cnt = 0;
+            memset(ESP01S_buf,0x00,sizeof(ESP01S_buf));
+            HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
+        }
+        else
+        {
 
-    if(ESP01S_cnt >= sizeof(ESP01S_buf))  //溢出判断
-    {
-        ESP01S_cnt = 0;
-        memset(ESP01S_buf,0x00,sizeof(ESP01S_buf));
-        HAL_UART_Transmit(&huart1, (uint8_t *)"接收缓存溢出", 10,0xFFFF);
+//          ESP01S_buf[ESP01S_cnt++] = USART2->DR;
+            ESP01S_buf[ESP01S_cnt++] = aRxBuffer;   //接收数据转存
+            if(aRxBuffer=='1')  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
+            if(aRxBuffer=='0')  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+        }
+
+        HAL_UART_Receive_IT(&huart2, (uint8_t *)&aRxBuffer, 1);   //再开启接收中断
     }
-    else
-    {
 
-        ESP01S_buf[ESP01S_cnt++] = USART3->DR;
-//        ESP01S_buf[ESP01S_cnt++] = aRxBuffer;   //接收数据转存
-		  if(aRxBuffer=='1')  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
-          if(aRxBuffer=='0')  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
-    }
-
-    HAL_UART_Receive_IT(&huart3, (uint8_t *)&aRxBuffer, 1);   //再开启接收中断
 }
 
 
