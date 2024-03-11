@@ -48,8 +48,6 @@ else ()
     message(STATUS "Minimal optimization, debug info included")
     add_compile_options(-Og -g)
 endif ()
-
-
 include_directories(
         Core/Inc
         Drivers/STM32F1xx_HAL_Driver/Inc
@@ -58,15 +56,12 @@ include_directories(
         Drivers/CMSIS/Include
         NET/
 )
-
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB)
-
 file(GLOB_RECURSE SOURCES
         "Core/*.*"
         "Drivers/*.*"
         "NET/*.*"
 )
-
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F103C8TX_FLASH.ld)
 

@@ -20,19 +20,55 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06db18f9-152e-455a-9538-8957cb992f2a" name="Changes" comment="Successful connect WiFi!">
+    <list default="true" id="06db18f9-152e-455a-9538-8957cb992f2a" name="Changes" comment="Successful MQTT">
+      <change afterPath="$PROJECT_DIR$/Core/Inc/Control.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Inc/Key.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Inc/Relay.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Inc/Steer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/Control.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/Key.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/Relay.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Core/Src/Steer.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/BEEP.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/BEEP.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/DHT11.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/DHT11.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/MQ2.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/MQ2.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/main.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/main.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/stm32f1xx_it.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Inc/tim.h" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Inc/tim.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/BEEP.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/BEEP.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/DHT11.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/DHT11.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/MQ2.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/MQ2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/gpio.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/gpio.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Core/Src/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NET/onenet.c" beforeDir="false" afterPath="$PROJECT_DIR$/NET/onenet.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NET/onenet.h" beforeDir="false" afterPath="$PROJECT_DIR$/NET/onenet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/stm32f1xx_it.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/tim.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/tim.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Core/Src/usart.c" beforeDir="false" afterPath="$PROJECT_DIR$/Core/Src/usart.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Firmware.ioc" beforeDir="false" afterPath="$PROJECT_DIR$/Firmware.ioc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-f8e448241348d2d41bfb.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-10T13-09-09-0465.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-Firmware.elf-Debug-2083966132de0b9b7a44.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.27.8/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/MQ2.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/MQ2.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.elf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.hex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Firmware.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +121,9 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2dMdoQg9TK1fWL8DdczUbvYpwGz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -100,7 +138,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "com.google.cloudcode.ide_session_index": "20240310_0003",
+    "com.google.cloudcode.ide_session_index": "20240311_0000",
     "git-widget-placeholder": "master",
     "last_opened_file_path": "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen",
     "node.js.detected.package.eslint": "true",
@@ -124,12 +162,12 @@
     </key>
   </component>
   <component name="RunManager" selected="OpenOCD Download &amp; Run.OCD Firmware">
-    <configuration name="Firmware.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Firmware" TARGET_NAME="Firmware.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Firmware" RUN_TARGET_NAME="Firmware.elf">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Firmware.elf" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Firmware" TARGET_NAME="Firmware.elf" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Firmware" RUN_TARGET_NAME="Firmware.elf">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -170,7 +208,8 @@
       <workItem from="1710050377816" duration="1922000" />
       <workItem from="1710057548271" duration="2650000" />
       <workItem from="1710062118763" duration="282000" />
-      <workItem from="1710062410545" duration="15470000" />
+      <workItem from="1710062410545" duration="24374000" />
+      <workItem from="1710134229872" duration="6470000" />
     </task>
     <task id="LOCAL-00001" summary="Initial:Upload the 0.0.1 version of a smart kitchen.">
       <option name="closed" value="true" />
@@ -292,7 +331,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710077208001</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Successful MQTT">
+      <option name="closed" value="true" />
+      <created>1710088894387</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1710088894387</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,6 +368,7 @@
     <MESSAGE value="Can't Initial ESP8266" />
     <MESSAGE value="USART3-&gt;USART2" />
     <MESSAGE value="Successful connect WiFi!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Successful connect WiFi!" />
+    <MESSAGE value="Successful MQTT" />
+    <option name="LAST_COMMIT_MESSAGE" value="Successful MQTT" />
   </component>
 </project>

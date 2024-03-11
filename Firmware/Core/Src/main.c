@@ -70,9 +70,10 @@ int main(void)
   /* USER CODE BEGIN 1 */
     const char *topics[] = {"/mysmartkitchen/sub"};
 
-    unsigned short timeCount = 0;	//发送间隔变量
+    unsigned short timeCount = 0;	//
 
     unsigned char *dataPtr = NULL;
+
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -89,6 +90,22 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+//    include_directories(
+//            Core/Inc
+//    Drivers/STM32F1xx_HAL_Driver/Inc
+//    Drivers/STM32F1xx_HAL_Driver/Inc/Legacy
+//    Drivers/CMSIS/Device/ST/STM32F1xx/Include
+//    Drivers/CMSIS/Include
+//    NET/
+//    )
+//
+//    add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB)
+//
+//    file(GLOB_RECURSE SOURCES
+//    "Core/*.*"
+//    "Drivers/*.*"
+//    "NET/*.*"
+//    )
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -99,44 +116,30 @@ int main(void)
   MX_TIM2_Init();
   MX_USART2_UART_Init();
   MX_ADC1_Init();
+  MX_TIM3_Init();
+  MX_TIM4_Init();
   /* USER CODE BEGIN 2 */
   RetargetInit(&huart1);
   BEEP_Init();
   OLED_Init();                           //OLED初始
   OLED_Clear();                         //清屏
+  Steer_Init();
 
 
 
-
-  printf("The USART1 is OK!\r\n");
-  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
-  ESP01S_Init();  //8266初始
-  while(OneNet_DevLink())  //接入onenet
-  ESP01S_Clear();    //
-
-  OneNet_Subscribe(topics, 1);
-
-  printf("Init is OK!\r\n");
+//  printf("The USART1 is OK!\r\n");
+//  HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1); // 启动中断接收
+//  ESP01S_Init();  //8266初始
+//  while(OneNet_DevLink())  //接入onenet
+//  ESP01S_Clear();    //
+//
+//  OneNet_Subscribe(topics, 1);
 
 
-    OLED_ShowString(0,0,"UNICORN_LI",16, 1);    //反相显示8X16�?
-    OLED_ShowString(0,2,"unicorn_li_123",12,0);//正相显示6X8�?
-
-
-
-    OLED_ShowCHinese(0,4,0,1); //反相显示汉字“独
-    OLED_ShowCHinese(16,4,1,1);//反相显示汉字“角
-    OLED_ShowCHinese(32,4,2,1);//反相显示汉字“兽
-    OLED_ShowCHinese(0,6,0,0); //正相显示汉字“独
-    OLED_ShowCHinese(16,6,1,0);//正相显示汉字�?
-    OLED_ShowCHinese(32,6,2,0);//正相显示汉字�?
-
-    OLED_ShowNum(48,4,6,1,16, 0);//正相显示1
-    OLED_ShowNum(48,7,77,2,12, 1);//反相显示
-    OLED_DrawBMP(90,0,122, 4,BMP1,0);//正相显示图片BMP1
-    OLED_DrawBMP(90,4,122, 8,BMP1,1);//反相显示图片BMP1
-
-    OLED_HorizontalShift(0x26);//全屏水平向右滚动播放
+    OLED_ShowString(0,0,"Mode: Auto",12, 0);
+    OLED_ShowString(0,2,"STEER: OFF",12,0);
+    OLED_ShowString(0,4,"FAN/MOTO: ON",12,0);
+    printf("Init is OK!\r\n");
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -145,7 +148,60 @@ int main(void)
   while (1)
   {
 
-      if(++timeCount >= 50)									//发送间隔5s
+
+
+
+      /*****继电�??????-风扇、电�??????
+          MOTO_Cotrol(1);
+          FUN_Cotrol(1);
+       ***/
+
+
+
+    /************舵机
+
+           Steer_Angle(50);
+          HAL_Delay(1000);
+
+          Steer_Angle(100);
+          HAL_Delay(1000);
+
+          Steer_Angle(150);
+          HAL_Delay(1000);
+
+     ******************/
+
+      /*********蜂鸣�???????
+
+        Buzzer_Beep(uint32_t onTimeMs, uint32_t offTimeMs, uint8_t repetitions);
+        BEEP_Init();
+        BEEP_On();
+        BEEP_Off();
+
+       ***********/
+
+      /*****MQ-2烟雾
+
+      HAL_ADCEx_Calibration_Start(&hadc1);//ADC采样校准
+      ADC_MQ2 = ADC_IN_1();
+      printf("%d\r\n",ADC_MQ2);
+
+       **********/
+
+      /************DHT11温湿度读�????????
+
+      DHT11_Read_Data(&temperature , &humidity);
+      //将数据存放到aTXbuf这个数组当中去�?? 不了�????????"sprintf"用法的可以去查一�????????...
+      sprintf((char*)aTXbuf,"温度�????????%d℃，湿度: %d %%\r\n" ,temperature ,humidity);
+      //将数据过串口发到主机上的串口助手
+      HAL_UART_Transmit(&huart1, aTXbuf, strlen((const char*)aTXbuf), 200);
+      HAL_Delay(500);
+
+       **********/
+
+      /**************上传MQTT
+
+       if(++timeCount >= 50)									//发�?�间�???????????5s
       {
 
           printf("OneNet_Publish\r\n");
@@ -161,9 +217,12 @@ int main(void)
       if(dataPtr != NULL)
           OneNet_RevPro(dataPtr);
 
-      HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+       ******************/
 
-      HAL_Delay(100);
+
+//      HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+
+      HAL_Delay(10);
 
     /* USER CODE END WHILE */
 
@@ -235,7 +294,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 //        if(aRxBuffer=='0')  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
     }
 
-    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中断
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�???????????
 }
 
 /* USER CODE END 4 */

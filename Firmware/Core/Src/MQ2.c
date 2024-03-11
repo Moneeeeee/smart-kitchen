@@ -4,6 +4,8 @@
 
 #include "MQ2.h"
 
+uint16_t ADC_MQ2;
+
 uint16_t ADC_IN_1(void) //ADC采集程序
 {
     HAL_ADC_Start(&hadc1);//开始ADC采集
