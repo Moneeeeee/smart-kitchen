@@ -7,6 +7,15 @@
 void Steer_Angle(uint8_t angle)
 {
     __HAL_TIM_SET_COMPARE(&htim2,TIM_CHANNEL_3,angle+ 50); //相当于一个周期内（20ms）有0.5ms高脉冲
+    if(angle == 50){
+        //当关闭管道，管道位置为1
+        Steer_Flag = 1;
+    }
+    if(angle == 90){
+        //当开启管道，管道位置为0
+        Steer_Flag = 0;
+    }
+
 }
 
 

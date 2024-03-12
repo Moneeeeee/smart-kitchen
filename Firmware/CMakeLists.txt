@@ -48,6 +48,7 @@ else ()
     message(STATUS "Minimal optimization, debug info included")
     add_compile_options(-Og -g)
 endif ()
+
 include_directories(
         Core/Inc
         Drivers/STM32F1xx_HAL_Driver/Inc

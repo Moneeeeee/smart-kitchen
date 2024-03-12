@@ -7,10 +7,7 @@
 
 #include "main.h"
 
-void MOTO_Cotrol(uint8_t state);
 
-void FUN_Cotrol(uint8_t state);
-
-
+void Relay_Cotrol(uint8_t state);
 
 #endif //FIRMWARE_RELAY_H
