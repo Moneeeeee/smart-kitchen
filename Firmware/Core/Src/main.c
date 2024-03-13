@@ -68,10 +68,10 @@ void SystemClock_Config(void);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-    const char *topics[] = {"/mysmartkitchen/sub"};
-
+    const char *devSubTopic[] = {"/mysmartkitchen/sub"};
+    const char devPubTopic[] = "/mysmartkitchen/pub";
     unsigned short timeCount = 0;	//
-
+    char PUB_BUF[256];//上传数据的PUB
     unsigned char *dataPtr = NULL;
 
   /* USER CODE END 1 */
@@ -132,8 +132,7 @@ int main(void)
   ESP01S_Init();  //8266初始
   while(OneNet_DevLink())  //接入onenet
   ESP01S_Clear();    //*/
-    HAL_GPIO_ReadPin(GPIOA,GPIO_PIN_RESET);
-  OneNet_Subscribe(topics, 1);
+  OneNet_Subscribe(devSubTopic, 1);
 
     OLED_ShowString(0,0,"Mode:   Auto",12, 0);
     OLED_ShowString(0,2,"STEER:   OFF",12,0);
@@ -153,22 +152,39 @@ int main(void)
   {
 
 
-      Steer_Angle(45);
+//      Steer_Angle(45);
+//
+//      HAL_ADCEx_Calibration_Start(&hadc1);//ADC采样校准
+//      ADC_MQ2 = ADC_IN_1();
+//
+//      DHT11_Read_Data(&temperature, &humidity);
+//
+//      OLED_Show();
+//
+//      if(Flash_Flag == 1)
+//      {
+//          HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+//      }
+//      printf("111\r\n");
 
-      HAL_ADCEx_Calibration_Start(&hadc1);//ADC采样校准
-      ADC_MQ2 = ADC_IN_1();
-
-      DHT11_Read_Data(&temperature, &humidity);
-
-      OLED_Show();
-
-      if(Flash_Flag == 1)
+      if(++timeCount >= 500)									//发送间隔5s
       {
-          HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+          printf("OneNet_Publish\r\n");
+
+          sprintf(PUB_BUF,"{\"Temp\":%d,\"Hum\":%d,\"MQ2\":%d}",
+                  temperature,humidity,ADC_MQ2);
+          OneNet_Publish(devPubTopic, PUB_BUF);
+
+          timeCount = 0;
+          ESP01S_Clear();
       }
 
-      HAL_Delay(100);
-      /*****继电�???????????-风扇、电�???????????
+      dataPtr = ESP01S_GetIPD(0);
+      if(dataPtr != NULL)
+          OneNet_RevPro(dataPtr);
+
+      HAL_Delay(10);
+      /*****继电�???????????-风扇、电�???????????
           MOTO_Cotrol(1);
           FUN_Cotrol(1);
        ***/
@@ -189,7 +205,7 @@ int main(void)
 
      ******************/
 
-      /*********蜂鸣�????????????
+      /*********蜂鸣�????????????
 
         Buzzer_Beep(uint32_t onTimeMs, uint32_t offTimeMs, uint8_t repetitions);
         BEEP_Init();
@@ -206,11 +222,11 @@ int main(void)
 
        **********/
 
-      /************DHT11温湿度读�?????????????
+      /************DHT11温湿度读�?????????????
 
       DHT11_Read_Data(&temperature , &humidity);
-      //将数据存放到aTXbuf这个数组当中去�?? 不了�?????????????"sprintf"用法的可以去查一�?????????????...
-      sprintf((char*)aTXbuf,"温度�?????????????%d℃，湿度: %d %%\r\n" ,temperature ,humidity);
+      //将数据存放到aTXbuf这个数组当中去�?? 不了�?????????????"sprintf"用法的可以去查一�?????????????...
+      sprintf((char*)aTXbuf,"温度�?????????????%d℃，湿度: %d %%\r\n" ,temperature ,humidity);
       //将数据过串口发到主机上的串口助手
       HAL_UART_Transmit(&huart1, aTXbuf, strlen((const char*)aTXbuf), 200);
       HAL_Delay(500);
@@ -219,7 +235,7 @@ int main(void)
 
       /**************上传MQTT
 
-       if(++timeCount >= 50)									//发�?�间�????????????????5s
+       if(++timeCount >= 50)									//发�?�间�????????????????5s
       {
 
           printf("OneNet_Publish\r\n");
@@ -297,7 +313,6 @@ void SystemClock_Config(void)
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 
-    printf("111\r\n");
     if(ESP01S_cnt >= sizeof(ESP01S_buf))  //溢出判断
     {
         ESP01S_cnt = 0;
@@ -311,7 +326,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 //        if(aRxBuffer=='0')  HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_RESET);
     }
 
-    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�????????????????
+    HAL_UART_Receive_IT(&huart2, &aRxBuffer, 1);   //再开启接收中�????????????????
 }
 
 /* USER CODE END 4 */

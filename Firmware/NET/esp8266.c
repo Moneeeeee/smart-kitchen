@@ -173,9 +173,8 @@ unsigned char *ESP01S_GetIPD(unsigned short timeOut)
             }
         }
 
-        HAL_Delay(5);
-        timeOut--;		//延时等待
-    } while(timeOut>0);
+        HAL_Delay(5);	        //延时等待
+    } while(timeOut--);
 
     return NULL;														//超时还未找到，返回空指针
 
