@@ -31,28 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "stdint.h"
-#include "stdint-gcc.h"
-#include "string.h"
-//#include "retarget.h"
-//#include "OLED.h"
-//#include "DHT11.h"
-//#include "adc.h"
-//#include "i2c.h"
-//#include "tim.h"
-//#include "usart.h"
-//#include "gpio.h"
-//#include "MQ2.h"
-//#include "LED.h"
-//#include "BEEP.h"
-//#include "FAN.h"
-//#include "esp8266.h"
-//#include "onenet.h"
-//#include "MqttKit.h"
-//#include "Steer.h"
-//#include "Relay.h"
-//#include "Control.h"
-//#include "cJSON.h"
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -62,8 +41,6 @@ extern "C" {
 
 /* Exported constants --------------------------------------------------------*/
 /* USER CODE BEGIN EC */
-extern unsigned char esp8266_buf[128];
-extern unsigned short esp8266_cnt , esp8266_cntPre ;
 
 /* USER CODE END EC */
 
@@ -82,6 +59,8 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Test_Pin GPIO_PIN_13
 #define LED_Test_GPIO_Port GPIOC
+#define Debug_TX_Pin GPIO_PIN_3
+#define Debug_TX_GPIO_Port GPIOA
 #define FAN_Pin GPIO_PIN_4
 #define FAN_GPIO_Port GPIOA
 #define MOTO_Pin GPIO_PIN_5
@@ -94,23 +73,18 @@ void Error_Handler(void);
 #define BEEP_GPIO_Port GPIOB
 #define STEER_Pin GPIO_PIN_10
 #define STEER_GPIO_Port GPIOB
-#define Debug_TX_Pin GPIO_PIN_9
-#define Debug_TX_GPIO_Port GPIOA
 #define Debug_RX_Pin GPIO_PIN_10
 #define Debug_RX_GPIO_Port GPIOA
 #define KEY1_Pin GPIO_PIN_5
 #define KEY1_GPIO_Port GPIOB
-#define KEY1_EXTI_IRQn EXTI9_5_IRQn
 #define OLED_SCL_Pin GPIO_PIN_6
 #define OLED_SCL_GPIO_Port GPIOB
 #define OLED_SDA_Pin GPIO_PIN_7
 #define OLED_SDA_GPIO_Port GPIOB
 #define KEY2_Pin GPIO_PIN_8
 #define KEY2_GPIO_Port GPIOB
-#define KEY2_EXTI_IRQn EXTI9_5_IRQn
 #define KEY3_Pin GPIO_PIN_9
 #define KEY3_GPIO_Port GPIOB
-#define KEY3_EXTI_IRQn EXTI9_5_IRQn
 
 /* USER CODE BEGIN Private defines */
 
