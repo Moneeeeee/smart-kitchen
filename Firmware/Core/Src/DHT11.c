@@ -4,7 +4,7 @@
 
 uint8_t temperature = 1 ;
 uint8_t humidity = 1;
-uint8_t aTXbuf[32] ;
+//uint8_t aTXbuf[32] ;
 
 /**
   * @brief  us级延时函数

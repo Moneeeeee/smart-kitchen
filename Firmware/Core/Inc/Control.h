@@ -13,18 +13,17 @@ extern volatile uint8_t Steer_Flag;
 extern volatile uint8_t Relay_Flag;
 extern volatile uint8_t MQ2_Flag;
 extern volatile uint8_t Tem_Flag;
-extern volatile uint8_t Hum_Flag;
 extern volatile uint8_t Flash_Flag;
-extern volatile uint8_t Danger_Flag;
 
-extern volatile int temperature_threshold;
-extern volatile int humidity_threshold ;
-extern volatile int MQ2_threshold ;
 
+
+extern uint16_t ADC_MQ2;
 void MQ2_Check(void);
 void Tem_Check(void);
-void Hum_Check(void);
-void Over_Status(void);
+void Steer_Angle(uint8_t angle);
+void Steer_Init(void);
 void OLED_Show(void);
 void Update_System_Status(void);
+void Relay_Cotrol(uint8_t state);
+uint16_t ADC_IN_1(void);
 #endif //FIRMWARE_CONTROL_H

@@ -2,16 +2,7 @@
 // Created by Monee on 2024/3/11.
 
 #include "Key.h"
-
-
-
-
-
-void Key_Scan()
-{
-
-}
-
+#include "Control.h"
 __weak void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
     if (GPIO_Pin == KEY1_Pin) {

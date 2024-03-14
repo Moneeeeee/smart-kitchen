@@ -23,8 +23,6 @@
 /* USER CODE BEGIN 0 */
 
 
-volatile uint8_t rxBuffer[RX_BUFFER_SIZE];
-volatile uint16_t rxIndex = 0;
 
 
 /* USER CODE END 0 */
@@ -88,7 +86,7 @@ void MX_USART2_UART_Init(void)
   /* USER CODE BEGIN USART2_Init 2 */
     HAL_NVIC_SetPriority(USART2_IRQn, 5, 0);
     HAL_NVIC_EnableIRQ(USART2_IRQn);
-    __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE); //�?启串口空闲中�?
+    __HAL_UART_ENABLE_IT(&huart2, UART_IT_RXNE); //�??启串口空闲中�??
   /* USER CODE END USART2_Init 2 */
 
 }
@@ -208,7 +206,7 @@ void Usart_SendString(UART_HandleTypeDef USARTx, unsigned char *str, unsigned sh
 
     for(; count < len; count++)
     {
-        HAL_UART_Transmit (&USARTx ,(uint8_t *)str++,1,HAL_MAX_DELAY );									//发�?�数�????
+        HAL_UART_Transmit (&USARTx ,(uint8_t *)str++,1,HAL_MAX_DELAY );									//发�?�数�?????
     }
 
 }

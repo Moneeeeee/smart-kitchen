@@ -22,6 +22,6 @@ uint8_t DHT11_Read_Data(uint8_t* temp , uint8_t* humi);  //读取DHT11湿度和�
 
 extern uint8_t temperature ;
 extern uint8_t humidity ;
-extern uint8_t aTXbuf[32] ;
+//extern uint8_t aTXbuf[32] ;
 
 #endif

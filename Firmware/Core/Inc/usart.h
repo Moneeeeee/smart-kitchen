@@ -37,10 +37,6 @@ extern UART_HandleTypeDef huart1;
 extern UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN Private defines */
-#define UART_DEBUG USART1
-#define RX_BUFFER_SIZE 128
-extern volatile uint8_t rxBuffer[RX_BUFFER_SIZE];
-extern volatile uint16_t rxIndex;
 
 /* USER CODE END Private defines */
 

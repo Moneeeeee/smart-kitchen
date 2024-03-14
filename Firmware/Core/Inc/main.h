@@ -34,24 +34,25 @@ extern "C" {
 #include "stdint.h"
 #include "stdint-gcc.h"
 #include "string.h"
-#include "retarget.h"
-#include "OLED.h"
-#include "DHT11.h"
-#include "adc.h"
-#include "i2c.h"
-#include "tim.h"
-#include "usart.h"
-#include "gpio.h"
-#include "MQ2.h"
-#include "LED.h"
-#include "BEEP.h"
-#include "FAN.h"
-#include "esp8266.h"
-#include "onenet.h"
-#include "MqttKit.h"
-#include "Steer.h"
-#include "Relay.h"
-#include "Control.h"
+//#include "retarget.h"
+//#include "OLED.h"
+//#include "DHT11.h"
+//#include "adc.h"
+//#include "i2c.h"
+//#include "tim.h"
+//#include "usart.h"
+//#include "gpio.h"
+//#include "MQ2.h"
+//#include "LED.h"
+//#include "BEEP.h"
+//#include "FAN.h"
+//#include "esp8266.h"
+//#include "onenet.h"
+//#include "MqttKit.h"
+//#include "Steer.h"
+//#include "Relay.h"
+//#include "Control.h"
+//#include "cJSON.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
@@ -81,8 +82,6 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Test_Pin GPIO_PIN_13
 #define LED_Test_GPIO_Port GPIOC
-#define LED_Pin GPIO_PIN_1
-#define LED_GPIO_Port GPIOA
 #define FAN_Pin GPIO_PIN_4
 #define FAN_GPIO_Port GPIOA
 #define MOTO_Pin GPIO_PIN_5
@@ -99,8 +98,6 @@ void Error_Handler(void);
 #define Debug_TX_GPIO_Port GPIOA
 #define Debug_RX_Pin GPIO_PIN_10
 #define Debug_RX_GPIO_Port GPIOA
-#define ESP_RST_Pin GPIO_PIN_3
-#define ESP_RST_GPIO_Port GPIOB
 #define KEY1_Pin GPIO_PIN_5
 #define KEY1_GPIO_Port GPIOB
 #define KEY1_EXTI_IRQn EXTI9_5_IRQn

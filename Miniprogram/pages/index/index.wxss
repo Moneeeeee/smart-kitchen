@@ -1,0 +1,76 @@
+/**index.wxss**/
+.page-container{
+  padding: 36rpx;
+}
+
+.header-container{
+  background-color: #3d7ef9;
+  color:#fff;
+  border-radius: 36rpx;
+  padding: 20rpx 40rpx;
+}
+
+.header-container .header-air{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+.header-container .header-title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 64rpx;
+}
+.header-container .header-ad{
+
+  margin-top: 36;
+  font-size: 24rpx;
+}
+
+.data-container{
+  margin-top: 36rpx;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill,300rpx);
+  grid-gap: 36rpx;
+}
+
+.data-container .data-card{
+  position: relative ;
+  background-color: #fff;
+  height: 180rpx;
+  box-shadow: #d6d6d6 0 0 8rpx;
+  border-radius: 36rpx;
+  display: flex;
+  justify-content: space-between;
+  /* padding:  24rpx; */
+
+}
+
+.data-container .data-card .data-card_text{
+  position: absolute;
+  top:36rpx;
+  right: 24rpx;
+  text-align: right;
+  width: nowrap;
+
+}
+
+
+.data-container .data-card .data-card_icon{
+  position: adsolute;
+  height: 100rpx;
+  width: 100rpx;
+}
+.data-container .data-card .data-card_text{
+  position: adsolute;
+  font-size: 24rpx;
+  font-weight:bold ;
+  color: #7f7f77;
+}
+
+.data-container .data-card .data-card_value{
+  margin-top: 16rpx;
+ font-size: 52rpx;
+ font-weight: blod;
+ color: #7f7f7f;
+}

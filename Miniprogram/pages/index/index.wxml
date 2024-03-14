@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="page-container">
+
+<!--头部部分-->
+<view class="header-container">
+  <view class="header-air">
+    <view>
+       空气质量 - 良
+       </view>
+       <view>
+         山东大学
+       </view>
+
+  </view>
+  <view class="header-title">
+    <view>
+     60 
+    </view>
+       <view>
+         Hi
+       </view>
+  </view>
+  <view class="header-ad">
+    <view>
+     今天天气不错
+    </view>
+</view>
+
+
+
+</view>
+<!--数据部分-->
+<view class="data-container">
+  <view class="data-card">
+    <image class="data-card_icon" src="/icon/tem.png"/>
+    <view>
+      <view class="data-card_title">
+        温度
+      </view>
+      <view class="data-card_value">
+        {{Temp}} ℃
+      </view>
+    </view>
+  </view>
+  <!--温度-->
+  <view class="data-card">
+    <image class="data-card_icon" src="/icon/hum.png"/>
+    <view>
+      <view class="data-card_title">
+        湿度
+      </view>
+      <view class="data-card_value">
+        {{Hum}} ％
+      </view>
+    </view>
+  </view>
+  <!--湿度-->
+  <view class="data-card">
+    <image class="data-card_icon" src="/icon/mq2.png"/>
+    <view>
+      <view class="data-card_title">
+        燃气
+      </view>
+      <view class="data-card_value">
+        {{MQ2}}
+      </view>
+    </view>
+  </view>
+   <!--燃气-->
+   <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/light_OFF.png"/>
+    <view>
+      <view class="data-card_title">
+        灯光
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{LED}}" bindchange="onLEDChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+   <!--灯光-->
+   <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/gas_OFF.png"/>
+    <view>
+      <view class="data-card_title">
+        管道
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{Steer}}" bindchange="onSTEERChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+   <!--管道-->
+   <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/fan_OFF.png"/>
+    <view>
+      <view class="data-card_title">
+        风扇
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{Relay}}" bindchange="onRELAYChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+   <!--风扇-->
+</view>
+</view>

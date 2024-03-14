@@ -1,0 +1,24 @@
+<!--logs.wxml-->
+<view class="page-container">
+<view class="header">
+  <view class="header-air">
+    <view>
+       空气质量 - 良
+       </view>
+       <view>
+         Hi
+       </view>
+
+  </view>
+  <view class="header-title">
+    <view>
+     60 
+    </view>
+       <view>
+         Hi
+       </view>
+  </view>
+  <view class="header-ad">
+</view>
+</view>
+</view>

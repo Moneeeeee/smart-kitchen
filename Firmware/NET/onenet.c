@@ -24,7 +24,8 @@
 #include "main.h"
 //网络设备
 #include "esp8266.h"
-
+#include "cJSON.h"
+#include "Control.h"
 //协议文件
 #include "onenet.h"
 #include "Mqttkit.h"
@@ -195,64 +196,40 @@ void OneNet_RevPro(unsigned char *cmd)
     char numBuf[10];
     int num = 0;
 
+    cJSON *json , *json_value;
     type = MQTT_UnPacketRecv(cmd);
-    switch(type)
-    {
-        case MQTT_PKT_CMD:															//命令下发
+    switch(type) {
+        case MQTT_PKT_CMD:                                                            //命令下发
 
-            result = MQTT_UnPacketCmd(cmd, &cmdid_topic, &req_payload, &req_len);	//解出topic和消息体
-            if(result == 0)
-            {
+            result = MQTT_UnPacketCmd(cmd, &cmdid_topic, &req_payload, &req_len);    //解出topic和消息体
+            if (result == 0) {
                 printf("cmdid: %s, req: %s, req_len: %d\r\n", cmdid_topic, req_payload, req_len);
 
-                if(MQTT_PacketCmdResp(cmdid_topic, req_payload, &mqttPacket) == 0)	//命令回复组包
-                {
-                    printf("Tips:	Send CmdResp\r\n");
-
-                    ESP01S_SendData(mqttPacket._data, mqttPacket._len);			//回复命令
-                    MQTT_DeleteBuffer(&mqttPacket);									//删包
-                }
+                MQTT_DeleteBuffer(&mqttPacket);                                    //删包
             }
 
             break;
 
-        case MQTT_PKT_PUBLISH:														//接收的Publish消息
+        case MQTT_PKT_PUBLISH:                                                        //接收的Publish消息
 
             result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
-            if(result == 0)
+            if (result == 0)
             {
                 printf("topic: %s, topic_len: %d, payload: %s, payload_len: %d\r\n",
-                            cmdid_topic, topic_len, req_payload, req_len);
+                       cmdid_topic, topic_len, req_payload, req_len);
 
-                switch(qos)
-                {
-                    case 1:															//收到publish的qos为1，设备需要回复Ack
+                json = cJSON_Parse(req_payload);
+                if (!json) printf("Error before:[%s]\r\n", cJSON_GetErrorPtr());
+                else {
+                    json_value = cJSON_GetObjectItem(json, "Steer_SW");
+                    if (json_value->valueint)//json解析数据 大于0且为整形
+                    {
+                        Steer_Angle(90);
+                    }
 
-                        if(MQTT_PacketPublishAck(pkt_id, &mqttPacket) == 0)
-                        {
-                            printf("Tips:	Send PublishAck\r\n");
-                            ESP01S_SendData(mqttPacket._data, mqttPacket._len);
-                            MQTT_DeleteBuffer(&mqttPacket);
-                        }
-
-                        break;
-
-                    case 2:															//收到publish的qos为2，设备先回复Rec
-                        //平台回复Rel，设备再回复Comp
-                        if(MQTT_PacketPublishRec(pkt_id, &mqttPacket) == 0)
-                        {
-                            printf("Tips:	Send PublishRec\r\n");
-                            ESP01S_SendData(mqttPacket._data, mqttPacket._len);
-                            MQTT_DeleteBuffer(&mqttPacket);
-                        }
-
-                        break;
-
-                    default:
-                        break;
                 }
+                cJSON_Delete(json);
             }
-
             break;
 
         case MQTT_PKT_PUBACK:														//发送Publish消息，平台回复的Ack

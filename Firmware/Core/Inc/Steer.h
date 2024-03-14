@@ -8,6 +8,5 @@
 
 #include "main.h"
 
-void Steer_Angle(uint8_t angle);
-void Steer_Init(void);
+
 #endif //FIRMWARE_STEER_H
