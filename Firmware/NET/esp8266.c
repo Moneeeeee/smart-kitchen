@@ -198,7 +198,7 @@ void ESP01S_Init(void)
 
     printf("0. AT\r\n");
     while(ESP01S_SendCmd("AT\r\n", "OK"));
-//        HAL_Delay(500);
+        HAL_Delay(500);
 
     printf("1. RST\r\n");
     ESP01S_SendCmd("AT+RST\r\n", "");

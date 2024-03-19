@@ -1,36 +1,35 @@
-<!--index.wxml-->
+<!-- index.wxml -->
 <view class="page-container">
 
-<!--头部部分-->
+<!-- 头部部分 -->
 <view class="header-container">
   <view class="header-air">
     <view>
-       空气质量 - 良
-       </view>
-       <view>
-         山东大学
-       </view>
-
+      空气质量 - 良
+    </view>
+    <view>
+      山东大学
+    </view>
   </view>
   <view class="header-title">
     <view>
-     60 
+      60 
     </view>
-       <view>
-         Hi
-       </view>
+    <view>
+      Hi
+    </view>
   </view>
   <view class="header-ad">
     <view>
-     今天天气不错
+      今天天气不错
     </view>
+  </view>
 </view>
 
-
-
-</view>
-<!--数据部分-->
+<!-- 数据部分 -->
 <view class="data-container">
+  <!-- 数据卡片 -->
+  <!-- 温度 -->
   <view class="data-card">
     <image class="data-card_icon" src="/icon/tem.png"/>
     <view>
@@ -42,7 +41,7 @@
       </view>
     </view>
   </view>
-  <!--温度-->
+  <!-- 湿度 -->
   <view class="data-card">
     <image class="data-card_icon" src="/icon/hum.png"/>
     <view>
@@ -54,7 +53,7 @@
       </view>
     </view>
   </view>
-  <!--湿度-->
+  <!-- 燃气 -->
   <view class="data-card">
     <image class="data-card_icon" src="/icon/mq2.png"/>
     <view>
@@ -66,8 +65,8 @@
       </view>
     </view>
   </view>
-   <!--燃气-->
-   <view class="data-card"> 
+  <!-- 灯光 -->
+  <view class="data-card"> 
     <image class="data-card_icon" src="/icon/light_OFF.png"/>
     <view>
       <view class="data-card_title">
@@ -78,8 +77,8 @@
       </view>
     </view>
   </view>
-   <!--灯光-->
-   <view class="data-card"> 
+  <!-- 管道 -->
+  <view class="data-card"> 
     <image class="data-card_icon" src="/icon/gas_OFF.png"/>
     <view>
       <view class="data-card_title">
@@ -90,8 +89,8 @@
       </view>
     </view>
   </view>
-   <!--管道-->
-   <view class="data-card"> 
+  <!-- 风扇 -->
+  <view class="data-card"> 
     <image class="data-card_icon" src="/icon/fan_OFF.png"/>
     <view>
       <view class="data-card_title">
@@ -102,6 +101,7 @@
       </view>
     </view>
   </view>
-   <!--风扇-->
 </view>
+
+
 </view>

@@ -210,8 +210,56 @@ void OneNet_RevPro(unsigned char *cmd)
 
             break;
 
-        case MQTT_PKT_PUBLISH:                                                        //接收的Publish消息
-
+//        case MQTT_PKT_PUBLISH:                                                        //接收的Publish消息
+//
+//            result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
+//            if (result == 0)
+//            {
+//                printf("topic: %s, topic_len: %d, payload: %s, payload_len: %d\r\n",
+//                       cmdid_topic, topic_len, req_payload, req_len);
+//
+//                json = cJSON_Parse(req_payload);
+//                if (!json) printf("Error before:[%s]\r\n", cJSON_GetErrorPtr());
+//                else {
+//
+//                    json_value = cJSON_GetObjectItem(json, "Steer");
+//                    if (json_value != NULL) // 确保json_value非空
+//                    {
+//                        if (json_value->valueint) // json解析数据等于1
+//                        {
+//                            Steer_Angle(90);
+//                        } else
+//                        {
+//                            Steer_Angle(50);
+//                        }
+//                    }
+//
+//                    json_value = cJSON_GetObjectItem(json, "LED");
+//                    if (json_value->valueint)//json解析数据 大于0且为整形
+//                    {
+//                        HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
+//                    }
+//
+//                    json_value = cJSON_GetObjectItem(json, "Relay");
+//                    if (json_value != NULL) // 确保json_value非空
+//                    {
+//                        // 检查json_value的值，决定如何控制继电器
+//                        if (json_value->valueint) // json解析数据等于1
+//                        {
+//                            Steer_Angle(90);
+//                            Relay_Cotrol(1);
+//                        }
+//                        else{
+//                            Steer_Angle(50);
+//                            Relay_Cotrol(0);
+//                        }
+//                    }
+//                }
+//                cJSON_Delete(json);
+//            }
+//            break;
+// 接收到的Publish消息处理
+        case MQTT_PKT_PUBLISH:
             result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
             if (result == 0)
             {
@@ -219,16 +267,46 @@ void OneNet_RevPro(unsigned char *cmd)
                        cmdid_topic, topic_len, req_payload, req_len);
 
                 json = cJSON_Parse(req_payload);
-                if (!json) printf("Error before:[%s]\r\n", cJSON_GetErrorPtr());
-                else {
-                    json_value = cJSON_GetObjectItem(json, "Steer_SW");
-                    if (json_value->valueint)//json解析数据 大于0且为整形
-                    {
-                        Steer_Angle(90);
-                    }
+                if (!json) {
+                    printf("Error before:[%s]\r\n", cJSON_GetErrorPtr());
+                } else {
+                    // 先获取 target 字段
+                    cJSON *json_target = cJSON_GetObjectItem(json, "target");
+                    cJSON *json_value = cJSON_GetObjectItem(json, "value");
 
+                    if (json_target != NULL && json_value != NULL) {
+                        // 根据不同的 target 执行不同的操作
+                        if (strcmp(json_target->valuestring, "Steer") == 0) {
+                            // 根据 value 值控制舵机
+                            if (json_value->valueint == 1) {
+                                Steer_Angle(50); // 假设接收到 1 时转到 50
+                                Steer_Flag = 1;
+                            } else if (json_value->valueint == 0) {
+                                Steer_Angle(90); // 假设接收到 0 时也转到 50
+                                Steer_Flag = 0;
+                            }
+                        } else if (strcmp(json_target->valuestring, "LED") == 0) {
+                            // 控制 LED
+                            if (json_value->valueint == 1) {
+                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_RESET); // 切换 LED 状态
+
+                            }else if (json_value->valueint == 0) {
+                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_SET); // 切换 LED 状态
+                            }
+                        } else if (strcmp(json_target->valuestring, "Relay") == 0) {
+                            // 控制继电器
+                            if (json_value->valueint == 1) {
+                                Relay_Cotrol(1);
+                                Relay_Flag = 1;
+
+                            }else if (json_value->valueint == 0) {
+                                Relay_Cotrol(0);
+                                Relay_Flag = 0;
+                            }
+                        }
+                    }
+                    cJSON_Delete(json);
                 }
-                cJSON_Delete(json);
             }
             break;
 

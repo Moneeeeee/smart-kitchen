@@ -77,14 +77,17 @@ void Error_Handler(void);
 #define Debug_RX_GPIO_Port GPIOA
 #define KEY1_Pin GPIO_PIN_5
 #define KEY1_GPIO_Port GPIOB
+#define KEY1_EXTI_IRQn EXTI9_5_IRQn
 #define OLED_SCL_Pin GPIO_PIN_6
 #define OLED_SCL_GPIO_Port GPIOB
 #define OLED_SDA_Pin GPIO_PIN_7
 #define OLED_SDA_GPIO_Port GPIOB
 #define KEY2_Pin GPIO_PIN_8
 #define KEY2_GPIO_Port GPIOB
+#define KEY2_EXTI_IRQn EXTI9_5_IRQn
 #define KEY3_Pin GPIO_PIN_9
 #define KEY3_GPIO_Port GPIOB
+#define KEY3_EXTI_IRQn EXTI9_5_IRQn
 
 /* USER CODE BEGIN Private defines */
 

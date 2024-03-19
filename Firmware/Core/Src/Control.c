@@ -14,8 +14,9 @@ volatile uint8_t MQ2_Flag = 0; // 用于指示MQ2传感器值是否超过阈值�
 volatile uint8_t Tem_Flag = 0;
 volatile uint8_t Flash_Flag = 0;
 
-volatile uint8_t temperature_threshold = 100;
-volatile uint8_t MQ2_threshold = 100;
+
+volatile uint8_t temperature_threshold = 40;
+volatile uint16_t MQ2_threshold = 300;
 
 uint16_t ADC_MQ2;
 
