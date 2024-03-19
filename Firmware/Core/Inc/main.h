@@ -75,6 +75,12 @@ void Error_Handler(void);
 #define STEER_GPIO_Port GPIOB
 #define Debug_RX_Pin GPIO_PIN_10
 #define Debug_RX_GPIO_Port GPIOA
+#define KEY6_Pin GPIO_PIN_15
+#define KEY6_GPIO_Port GPIOA
+#define KEY6_EXTI_IRQn EXTI15_10_IRQn
+#define KEY4_Pin GPIO_PIN_4
+#define KEY4_GPIO_Port GPIOB
+#define KEY4_EXTI_IRQn EXTI4_IRQn
 #define KEY1_Pin GPIO_PIN_5
 #define KEY1_GPIO_Port GPIOB
 #define KEY1_EXTI_IRQn EXTI9_5_IRQn

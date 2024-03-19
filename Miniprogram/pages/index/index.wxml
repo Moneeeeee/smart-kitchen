@@ -97,11 +97,40 @@
         风扇
       </view>
       <view class="data-card_value">
-        <switch checked="{{Relay}}" bindchange="onRELAYChange" color="#3d7ef9"/>
+        <switch checked="{{FUN}}" bindchange="onFUNChange" color="#3d7ef9"/>
+      </view>
+    </view>
+  </view>
+   <!-- 消防 -->
+   <view class="data-card"> 
+    <image class="data-card_icon" src="/icon/water.png"/>
+    <view>
+      <view class="data-card_title">
+        喷淋
+      </view>
+      <view class="data-card_value">
+        <switch checked="{{Water}}" bindchange="onWATERChange" color="#3d7ef9"/>
       </view>
     </view>
   </view>
 </view>
-
+ <!-- 温度滑块 -->
+ <view class="data-card"> 
+        <view class="data-card_title">
+            温度阈值
+        </view>
+        <view class="data-card_value">
+            <slider value="{{tem_threshold}}" bindchange="onTEMThresholdChange" min="0" max="100" step="1" />
+        </view>
+    </view>
+ <!--气体 滑块 -->
+ <view class="data-card"> 
+        <view class="data-card_title">
+         烟雾阈值
+        </view>
+        <view class="data-card_value">
+            <slider value="{{MQ2_threshold}}" bindchange="onMQ2ThresholdChange" min="0" max="100" step="1" />
+        </view>
+    </view>
 
 </view>

@@ -12,10 +12,14 @@ volatile uint8_t Steer_Flag = 0;
 volatile uint8_t Relay_Flag = 0;
 volatile uint8_t MQ2_Flag = 0; // 用于指示MQ2传感器值是否超过阈值的标志位
 volatile uint8_t Tem_Flag = 0;
+volatile uint8_t FUN_Flag = 0;
+volatile uint8_t Water_Flag = 0;
+volatile uint8_t Invert_Flag=0;
 volatile uint8_t Flash_Flag = 0;
 
 
-volatile uint8_t temperature_threshold = 40;
+
+volatile uint8_t tem_threshold = 40;
 volatile uint16_t MQ2_threshold = 300;
 
 uint16_t ADC_MQ2;
@@ -66,50 +70,92 @@ void MQ2_Check()
 void Tem_Check()
 {
     DHT11_Read_Data(&temperature, &humidity);
-    Tem_Flag = (temperature > temperature_threshold) ? 1 : 0;
+    Tem_Flag = (temperature > tem_threshold) ? 1 : 0;
 }
 
 
-void Relay_Cotrol(uint8_t state)
+void FUN_Cotrol(uint8_t state)
 {
     if (state)
     {
         HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET);
-        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
-        Relay_Flag = 1;
-
+//        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
+        FUN_Flag = 1;
     }
     else
     {
         HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
-        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
-        Relay_Flag = 0;
-
-
+//        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
+        FUN_Flag = 0;
     }
 
 }
+void Water_Cotrol(uint8_t state)
+{
+    if (state)
+    {
+//        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_SET);
+        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_SET);
+        Water_Flag = 1;
+    }
+    else
+    {
+//        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_4,GPIO_PIN_RESET);
+        HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,GPIO_PIN_RESET);
+        Water_Flag = 0;
+    }
 
+}
 
 void Update_System_Status() {
     MQ2_Check();
     Tem_Check();
 
     if (Mode_Flag == 1) {
-        if (Tem_Flag || MQ2_Flag) {
+        if (Tem_Flag) {
             BEEP_On();
             Flash_Flag = 1;
-            Relay_Cotrol(1);
+            Water_Cotrol(1);
             Steer_Angle(50);
-        } else {
-            Relay_Cotrol(0);
         }
-    } else {
-        if (Tem_Flag || MQ2_Flag) {
+        if(MQ2_Flag){
             BEEP_On();
             Flash_Flag = 1;
-            Relay_Cotrol(1);
+            FUN_Cotrol(1);
+            Steer_Angle(50);
         }
+
+        if(Tem_Flag == 0 && MQ2_Flag == 0){
+            BEEP_Off();
+            Flash_Flag = 0;
+            FUN_Cotrol(0);
+            Water_Cotrol(0);
+            Steer_Angle(90);
+        }
+
+
+    } else {
+        if (Tem_Flag) {
+            BEEP_On();
+            Flash_Flag = 1;
+            Water_Cotrol(1);
+            Steer_Angle(50);
+        }
+        if(MQ2_Flag){
+            BEEP_On();
+            Flash_Flag = 1;
+            FUN_Cotrol(1);
+            Steer_Angle(50);
+         }
+
+         if(Tem_Flag == 0 && MQ2_Flag == 0){
+           BEEP_Off();
+           Flash_Flag = 0;
+//           FUN_Cotrol(0);
+//           Water_Cotrol(0);
+//           Steer_Angle(90);
+         }
+
     }
 }
 
@@ -120,8 +166,15 @@ void OLED_Show(void)
     OLED_ShowNum(50, 6, humidity, 2, 12, 0);
     OLED_ShowNum(90, 6, ADC_MQ2, 3, 12, 0);
 
+    OLED_ShowNum(110, 0, tem_threshold, 2, 12, 0);
+    OLED_ShowNum(110, 2, MQ2_threshold, 3, 12, 0);
+
+
     OLED_ShowString(0, 0, Mode_Flag == 1 ? "Mode:   Auto" : "Mode:   Manu", 12, 0);
     OLED_ShowString(0, 2, Steer_Flag == 1 ? "STEER:    ON" : "STEER:   OFF", 12, 0);
-    OLED_ShowString(0, 4, Relay_Flag == 1 ? "FAN/MOTO: ON" : "FAN/MOTO:OFF", 12, 0);
+
+
+    OLED_ShowString(0, 4, FUN_Flag == 1 ? "FAN: ON" : "FAN:OFF", 12, 0);
+    OLED_ShowString(64, 4, Water_Flag == 1 ? "MOTO: ON" : "MOTO:OFF", 12, 0);
 }
 

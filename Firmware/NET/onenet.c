@@ -2,38 +2,38 @@
 	************************************************************
 	************************************************************
 	************************************************************
-	*	ÎÄ¼þÃû£º 	onenet.c
+	*	ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ 	onenet.c
 	*
-	*	×÷Õß£º 		ÕÅ¼ÌÈð
+	*	ï¿½ï¿½ï¿½ß£ï¿½ 		ï¿½Å¼ï¿½ï¿½ï¿½
 	*
-	*	ÈÕÆÚ£º 		2017-05-08
+	*	ï¿½ï¿½ï¿½Ú£ï¿½ 		2017-05-08
 	*
-	*	°æ±¾£º 		V1.1
+	*	ï¿½æ±¾ï¿½ï¿½ 		V1.1
 	*
-	*	ËµÃ÷£º 		ÓëonenetÆ½Ì¨µÄÊý¾Ý½»»¥½Ó¿Ú²ã
+	*	Ëµï¿½ï¿½ï¿½ï¿½ 		ï¿½ï¿½onenetÆ½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½ï¿½ï¿½Ó¿Ú²ï¿½
 	*
-	*	ÐÞ¸Ä¼ÇÂ¼£º	V1.0£ºÐ­Òé·â×°¡¢·µ»ØÅÐ¶Ï¶¼ÔÚÍ¬Ò»¸öÎÄ¼þ£¬²¢ÇÒ²»Í¬Ð­Òé½Ó¿Ú²»Í¬¡£
-	*				V1.1£ºÌá¹©Í³Ò»½Ó¿Ú¹©Ó¦ÓÃ²ãÊ¹ÓÃ£¬¸ù¾Ý²»Í¬Ð­ÒéÎÄ¼þÀ´·â×°Ð­ÒéÏà¹ØµÄÄÚÈÝ¡£
+	*	ï¿½Þ¸Ä¼ï¿½Â¼ï¿½ï¿½	V1.0ï¿½ï¿½Ð­ï¿½ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶Ï¶ï¿½ï¿½ï¿½Í¬Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò²ï¿½Í¬Ð­ï¿½ï¿½Ó¿Ú²ï¿½Í¬ï¿½ï¿½
+	*				V1.1ï¿½ï¿½ï¿½á¹©Í³Ò»ï¿½Ó¿Ú¹ï¿½Ó¦ï¿½Ã²ï¿½Ê¹ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Ý²ï¿½Í¬Ð­ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½×°Ð­ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
 	************************************************************
 	************************************************************
 	************************************************************
 **/
 
-//µ¥Æ¬»úÍ·ÎÄ¼þ
+//ï¿½ï¿½Æ¬ï¿½ï¿½Í·ï¿½Ä¼ï¿½
 #include "stm32f1xx_hal.h"
 #include "main.h"
-//ÍøÂçÉè±¸
+//ï¿½ï¿½ï¿½ï¿½ï¿½è±¸
 #include "esp8266.h"
 #include "cJSON.h"
 #include "Control.h"
-//Ð­ÒéÎÄ¼þ
+//Ð­ï¿½ï¿½ï¿½Ä¼ï¿½
 #include "onenet.h"
 #include "Mqttkit.h"
 
-//Ó²¼þÇý¶¯
+//Ó²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 #include "usart.h"
 
-//C¿â
+//Cï¿½ï¿½
 #include <string.h>
 #include <stdio.h>
 
@@ -49,20 +49,20 @@ extern unsigned char esp8266_buf[128];
 
 
 //==========================================================
-//	º¯ÊýÃû³Æ£º	OneNet_DevLink
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½	OneNet_DevLink
 //
-//	º¯Êý¹¦ÄÜ£º	Óëonenet´´½¨Á¬½Ó
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½	ï¿½ï¿½onenetï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //
-//	Èë¿Ú²ÎÊý£º	ÎÞ
+//	ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½
 //
-//	·µ»Ø²ÎÊý£º	1-³É¹¦	0-Ê§°Ü
+//	ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½	1-ï¿½É¹ï¿½	0-Ê§ï¿½ï¿½
 //
-//	ËµÃ÷£º		ÓëonenetÆ½Ì¨½¨Á¢Á¬½Ó
+//	Ëµï¿½ï¿½ï¿½ï¿½		ï¿½ï¿½onenetÆ½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //==========================================================
 _Bool OneNet_DevLink(void)
 {
 
-    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};					//Ð­Òé°ü
+    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};					//Ð­ï¿½ï¿½ï¿½
 
     unsigned char *dataPtr;
 
@@ -74,29 +74,29 @@ _Bool OneNet_DevLink(void)
 
     if(MQTT_PacketConnect(PROID, AUTH_INFO, DEVID, 256, 0, MQTT_QOS_LEVEL0, NULL, NULL, 0, &mqttPacket) == 0)
     {
-        ESP01S_SendData(mqttPacket._data, mqttPacket._len);			//ÉÏ´«Æ½Ì¨
+        ESP01S_SendData(mqttPacket._data, mqttPacket._len);			//ï¿½Ï´ï¿½Æ½Ì¨
 
-        dataPtr = ESP01S_GetIPD(250);									//µÈ´ýÆ½Ì¨ÏìÓ¦
+        dataPtr = ESP01S_GetIPD(250);									//ï¿½È´ï¿½Æ½Ì¨ï¿½ï¿½Ó¦
         if(dataPtr != NULL)
         {
             if(MQTT_UnPacketRecv(dataPtr) == MQTT_PKT_CONNACK)
             {
                 switch(MQTT_UnPacketConnectAck(dataPtr))
                 {
-                    case 0:printf("Tips:	Á¬½Ó³É¹¦\r\n");status = 0;break;
+                    case 0:printf("Tips:	ï¿½ï¿½ï¿½Ó³É¹ï¿½\r\n");status = 0;break;
 
-                    case 1:printf("WARN:	Á¬½ÓÊ§°Ü£ºÐ­Òé´íÎó\r\n");break;
-                    case 2:printf("WARN:	Á¬½ÓÊ§°Ü£º·Ç·¨µÄclientid\r\n");break;
-                    case 3:printf("WARN:	Á¬½ÓÊ§°Ü£º·þÎñÆ÷Ê§°Ü\r\n");break;
-                    case 4:printf("WARN:	Á¬½ÓÊ§°Ü£ºÓÃ»§Ãû»òÃÜÂë´íÎó\r\n");break;
-                    case 5:printf("WARN:	Á¬½ÓÊ§°Ü£º·Ç·¨Á´½Ó(±ÈÈçtoken·Ç·¨)\r\n");break;
+                    case 1:printf("WARN:	ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Ð­ï¿½ï¿½ï¿½ï¿½ï¿½\r\n");break;
+                    case 2:printf("WARN:	ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½Ç·ï¿½ï¿½ï¿½clientid\r\n");break;
+                    case 3:printf("WARN:	ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê§ï¿½ï¿½\r\n");break;
+                    case 4:printf("WARN:	ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\r\n");break;
+                    case 5:printf("WARN:	ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½(ï¿½ï¿½ï¿½ï¿½tokenï¿½Ç·ï¿½)\r\n");break;
 
-                    default:printf("ERR:	Á¬½ÓÊ§°Ü£ºÎ´Öª´íÎó\r\n");break;
+                    default:printf("ERR:	ï¿½ï¿½ï¿½ï¿½Ê§ï¿½Ü£ï¿½Î´Öªï¿½ï¿½ï¿½ï¿½\r\n");break;
                 }
             }
         }
 
-        MQTT_DeleteBuffer(&mqttPacket);								//É¾°ü
+        MQTT_DeleteBuffer(&mqttPacket);								//É¾ï¿½ï¿½
     }
     else
         printf("WARN:	MQTT_PacketConnect Failed\r\n");
@@ -106,79 +106,79 @@ _Bool OneNet_DevLink(void)
 }
 
 //==========================================================
-//	º¯ÊýÃû³Æ£º	OneNet_Subscribe
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½	OneNet_Subscribe
 //
-//	º¯Êý¹¦ÄÜ£º	¶©ÔÄ
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½	ï¿½ï¿½ï¿½ï¿½
 //
-//	Èë¿Ú²ÎÊý£º	topics£º¶©ÔÄµÄtopic
-//				topic_cnt£ºtopic¸öÊý
+//	ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½	topicsï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½topic
+//				topic_cntï¿½ï¿½topicï¿½ï¿½ï¿½ï¿½
 //
-//	·µ»Ø²ÎÊý£º	SEND_TYPE_OK-³É¹¦	SEND_TYPE_SUBSCRIBE-ÐèÒªÖØ·¢
+//	ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½	SEND_TYPE_OK-ï¿½É¹ï¿½	SEND_TYPE_SUBSCRIBE-ï¿½ï¿½Òªï¿½Ø·ï¿½
 //
-//	ËµÃ÷£º
+//	Ëµï¿½ï¿½ï¿½ï¿½
 //==========================================================
 void OneNet_Subscribe(const char *topics[], unsigned char topic_cnt)
 {
 
     unsigned char i = 0;
 
-    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};							//Ð­Òé°ü
+    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};							//Ð­ï¿½ï¿½ï¿½
 
     for(; i < topic_cnt; i++)
         printf("Subscribe Topic: %s\r\n", topics[i]);
 
     if(MQTT_PacketSubscribe(MQTT_SUBSCRIBE_ID, MQTT_QOS_LEVEL2, topics, topic_cnt, &mqttPacket) == 0)
     {
-        ESP01S_SendData(mqttPacket._data, mqttPacket._len);					//ÏòÆ½Ì¨·¢ËÍ¶©ÔÄÇëÇó
+        ESP01S_SendData(mqttPacket._data, mqttPacket._len);					//ï¿½ï¿½Æ½Ì¨ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        MQTT_DeleteBuffer(&mqttPacket);											//É¾°ü
+        MQTT_DeleteBuffer(&mqttPacket);											//É¾ï¿½ï¿½
     }
 
 }
 
 //==========================================================
-//	º¯ÊýÃû³Æ£º	OneNet_Publish
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½	OneNet_Publish
 //
-//	º¯Êý¹¦ÄÜ£º	·¢²¼ÏûÏ¢
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
 //
-//	Èë¿Ú²ÎÊý£º	topic£º·¢²¼µÄÖ÷Ìâ
-//				msg£ºÏûÏ¢ÄÚÈÝ
+//	ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½	topicï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+//				msgï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
 //
-//	·µ»Ø²ÎÊý£º	SEND_TYPE_OK-³É¹¦	SEND_TYPE_PUBLISH-ÐèÒªÖØËÍ
+//	ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½	SEND_TYPE_OK-ï¿½É¹ï¿½	SEND_TYPE_PUBLISH-ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½
 //
-//	ËµÃ÷£º
+//	Ëµï¿½ï¿½ï¿½ï¿½
 //==========================================================
 void OneNet_Publish(const char *topic, const char *msg)
 {
 
-    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};							//Ð­Òé°ü
+    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};							//Ð­ï¿½ï¿½ï¿½
 
     printf("Publish Topic: %s, Msg: %s\r\n", topic, msg);
 
     if(MQTT_PacketPublish(MQTT_PUBLISH_ID, topic, msg, strlen(msg), MQTT_QOS_LEVEL2, 0, 1, &mqttPacket) == 0)
     {
-        ESP01S_SendData(mqttPacket._data, mqttPacket._len);					//ÏòÆ½Ì¨·¢ËÍ¶©ÔÄÇëÇó
+        ESP01S_SendData(mqttPacket._data, mqttPacket._len);					//ï¿½ï¿½Æ½Ì¨ï¿½ï¿½ï¿½Í¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        MQTT_DeleteBuffer(&mqttPacket);											//É¾°ü
+        MQTT_DeleteBuffer(&mqttPacket);											//É¾ï¿½ï¿½
     }
 
 }
 
 //==========================================================
-//	º¯ÊýÃû³Æ£º	OneNet_RevPro
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½	OneNet_RevPro
 //
-//	º¯Êý¹¦ÄÜ£º	Æ½Ì¨·µ»ØÊý¾Ý¼ì²â
+//	ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü£ï¿½	Æ½Ì¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¼ï¿½ï¿½
 //
-//	Èë¿Ú²ÎÊý£º	dataPtr£ºÆ½Ì¨·µ»ØµÄÊý¾Ý
+//	ï¿½ï¿½Ú²ï¿½ï¿½ï¿½ï¿½ï¿½	dataPtrï¿½ï¿½Æ½Ì¨ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½
 //
-//	·µ»Ø²ÎÊý£º	ÎÞ
+//	ï¿½ï¿½ï¿½Ø²ï¿½ï¿½ï¿½ï¿½ï¿½	ï¿½ï¿½
 //
-//	ËµÃ÷£º
+//	Ëµï¿½ï¿½ï¿½ï¿½
 //==========================================================
 void OneNet_RevPro(unsigned char *cmd)
 {
 
-    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};								//Ð­Òé°ü
+    MQTT_PACKET_STRUCTURE mqttPacket = {NULL, 0, 0, 0};								//Ð­ï¿½ï¿½ï¿½
 
     char *req_payload = NULL;
     char *cmdid_topic = NULL;
@@ -199,18 +199,18 @@ void OneNet_RevPro(unsigned char *cmd)
     cJSON *json , *json_value;
     type = MQTT_UnPacketRecv(cmd);
     switch(type) {
-        case MQTT_PKT_CMD:                                                            //ÃüÁîÏÂ·¢
+        case MQTT_PKT_CMD:                                                            //ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½
 
-            result = MQTT_UnPacketCmd(cmd, &cmdid_topic, &req_payload, &req_len);    //½â³ötopicºÍÏûÏ¢Ìå
+            result = MQTT_UnPacketCmd(cmd, &cmdid_topic, &req_payload, &req_len);    //ï¿½ï¿½ï¿½topicï¿½ï¿½ï¿½ï¿½Ï¢ï¿½ï¿½
             if (result == 0) {
                 printf("cmdid: %s, req: %s, req_len: %d\r\n", cmdid_topic, req_payload, req_len);
 
-                MQTT_DeleteBuffer(&mqttPacket);                                    //É¾°ü
+                MQTT_DeleteBuffer(&mqttPacket);                                    //É¾ï¿½ï¿½
             }
 
             break;
 
-//        case MQTT_PKT_PUBLISH:                                                        //½ÓÊÕµÄPublishÏûÏ¢
+//        case MQTT_PKT_PUBLISH:                                                        //ï¿½ï¿½ï¿½Õµï¿½Publishï¿½ï¿½Ï¢
 //
 //            result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
 //            if (result == 0)
@@ -223,9 +223,9 @@ void OneNet_RevPro(unsigned char *cmd)
 //                else {
 //
 //                    json_value = cJSON_GetObjectItem(json, "Steer");
-//                    if (json_value != NULL) // È·±£json_value·Ç¿Õ
+//                    if (json_value != NULL) // È·ï¿½ï¿½json_valueï¿½Ç¿ï¿½
 //                    {
-//                        if (json_value->valueint) // json½âÎöÊý¾ÝµÈÓÚ1
+//                        if (json_value->valueint) // jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½1
 //                        {
 //                            Steer_Angle(90);
 //                        } else
@@ -235,16 +235,16 @@ void OneNet_RevPro(unsigned char *cmd)
 //                    }
 //
 //                    json_value = cJSON_GetObjectItem(json, "LED");
-//                    if (json_value->valueint)//json½âÎöÊý¾Ý ´óÓÚ0ÇÒÎªÕûÐÎ
+//                    if (json_value->valueint)//jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½0ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½
 //                    {
 //                        HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
 //                    }
 //
 //                    json_value = cJSON_GetObjectItem(json, "Relay");
-//                    if (json_value != NULL) // È·±£json_value·Ç¿Õ
+//                    if (json_value != NULL) // È·ï¿½ï¿½json_valueï¿½Ç¿ï¿½
 //                    {
-//                        // ¼ì²éjson_valueµÄÖµ£¬¾ö¶¨ÈçºÎ¿ØÖÆ¼ÌµçÆ÷
-//                        if (json_value->valueint) // json½âÎöÊý¾ÝµÈÓÚ1
+//                        // ï¿½ï¿½ï¿½json_valueï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î¿ï¿½ï¿½Æ¼Ìµï¿½ï¿½ï¿½
+//                        if (json_value->valueint) // jsonï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½ï¿½1
 //                        {
 //                            Steer_Angle(90);
 //                            Relay_Cotrol(1);
@@ -258,7 +258,7 @@ void OneNet_RevPro(unsigned char *cmd)
 //                cJSON_Delete(json);
 //            }
 //            break;
-// ½ÓÊÕµ½µÄPublishÏûÏ¢´¦Àí
+// ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½Publishï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
         case MQTT_PKT_PUBLISH:
             result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
             if (result == 0)
@@ -270,54 +270,67 @@ void OneNet_RevPro(unsigned char *cmd)
                 if (!json) {
                     printf("Error before:[%s]\r\n", cJSON_GetErrorPtr());
                 } else {
-                    // ÏÈ»ñÈ¡ target ×Ö¶Î
+                    // ï¿½È»ï¿½È¡ target ï¿½Ö¶ï¿½
                     cJSON *json_target = cJSON_GetObjectItem(json, "target");
                     cJSON *json_value = cJSON_GetObjectItem(json, "value");
 
                     if (json_target != NULL && json_value != NULL) {
-                        // ¸ù¾Ý²»Í¬µÄ target Ö´ÐÐ²»Í¬µÄ²Ù×÷
+                        // ï¿½ï¿½ï¿½Ý²ï¿½Í¬ï¿½ï¿½ target Ö´ï¿½Ð²ï¿½Í¬ï¿½Ä²ï¿½ï¿½ï¿½
                         if (strcmp(json_target->valuestring, "Steer") == 0) {
-                            // ¸ù¾Ý value Öµ¿ØÖÆ¶æ»ú
                             if (json_value->valueint == 1) {
-                                Steer_Angle(50); // ¼ÙÉè½ÓÊÕµ½ 1 Ê±×ªµ½ 50
+                                Steer_Angle(50); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ 1 Ê±×ªï¿½ï¿½ 50
                                 Steer_Flag = 1;
                             } else if (json_value->valueint == 0) {
-                                Steer_Angle(90); // ¼ÙÉè½ÓÊÕµ½ 0 Ê±Ò²×ªµ½ 50
+                                Steer_Angle(90); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ 0 Ê±Ò²×ªï¿½ï¿½ 50
                                 Steer_Flag = 0;
                             }
                         } else if (strcmp(json_target->valuestring, "LED") == 0) {
-                            // ¿ØÖÆ LED
+                            // ï¿½ï¿½ï¿½ï¿½ LED
                             if (json_value->valueint == 1) {
-                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_RESET); // ÇÐ»» LED ×´Ì¬
+                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_RESET); // ï¿½Ð»ï¿½ LED ×´Ì¬
 
                             }else if (json_value->valueint == 0) {
-                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_SET); // ÇÐ»» LED ×´Ì¬
+                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_SET); // ï¿½Ð»ï¿½ LED ×´Ì¬
                             }
-                        } else if (strcmp(json_target->valuestring, "Relay") == 0) {
-                            // ¿ØÖÆ¼ÌµçÆ÷
+                        } else if (strcmp(json_target->valuestring, "FUN") == 0) {
+
                             if (json_value->valueint == 1) {
-                                Relay_Cotrol(1);
-                                Relay_Flag = 1;
+                                FUN_Cotrol(1);
+                                FUN_Flag = 1;
 
                             }else if (json_value->valueint == 0) {
-                                Relay_Cotrol(0);
-                                Relay_Flag = 0;
+                                FUN_Cotrol(0);
+                                FUN_Flag = 0;
                             }
+                        }else if (strcmp(json_target->valuestring, "WATER") == 0) {
+
+                            if (json_value->valueint == 1) {
+                                Water_Cotrol(1);
+                                Water_Flag = 1;
+
+                            } else if (json_value->valueint == 0) {
+                                Water_Cotrol(0);
+                                Water_Flag = 0;
+                            }
+                        }else if (strcmp(json_target->valuestring, "tem_threshold") == 0) {
+                            tem_threshold = json_value->valueint;
+                            }
+                        }else if (strcmp(json_target->valuestring, "MQ2_threshold") == 0) {
+                            MQ2_threshold = (int)json_value->valuedouble;
                         }
-                    }
                     cJSON_Delete(json);
                 }
             }
             break;
 
-        case MQTT_PKT_PUBACK:														//·¢ËÍPublishÏûÏ¢£¬Æ½Ì¨»Ø¸´µÄAck
+        case MQTT_PKT_PUBACK:														//ï¿½ï¿½ï¿½ï¿½Publishï¿½ï¿½Ï¢ï¿½ï¿½Æ½Ì¨ï¿½Ø¸ï¿½ï¿½ï¿½Ack
 
             if(MQTT_UnPacketPublishAck(cmd) == 0)
                 printf("Tips:	MQTT Publish Send OK\r\n");
 
             break;
 
-        case MQTT_PKT_PUBREC:														//·¢ËÍPublishÏûÏ¢£¬Æ½Ì¨»Ø¸´µÄRec£¬Éè±¸Ðè»Ø¸´RelÏûÏ¢
+        case MQTT_PKT_PUBREC:														//ï¿½ï¿½ï¿½ï¿½Publishï¿½ï¿½Ï¢ï¿½ï¿½Æ½Ì¨ï¿½Ø¸ï¿½ï¿½ï¿½Recï¿½ï¿½ï¿½è±¸ï¿½ï¿½Ø¸ï¿½Relï¿½ï¿½Ï¢
 
             if(MQTT_UnPacketPublishRec(cmd) == 0)
             {
@@ -332,7 +345,7 @@ void OneNet_RevPro(unsigned char *cmd)
 
             break;
 
-        case MQTT_PKT_PUBREL:														//ÊÕµ½PublishÏûÏ¢£¬Éè±¸»Ø¸´Recºó£¬Æ½Ì¨»Ø¸´µÄRel£¬Éè±¸ÐèÔÙ»Ø¸´Comp
+        case MQTT_PKT_PUBREL:														//ï¿½Õµï¿½Publishï¿½ï¿½Ï¢ï¿½ï¿½ï¿½è±¸ï¿½Ø¸ï¿½Recï¿½ï¿½Æ½Ì¨ï¿½Ø¸ï¿½ï¿½ï¿½Relï¿½ï¿½ï¿½è±¸ï¿½ï¿½ï¿½Ù»Ø¸ï¿½Comp
 
             if(MQTT_UnPacketPublishRel(cmd, pkt_id) == 0)
             {
@@ -347,7 +360,7 @@ void OneNet_RevPro(unsigned char *cmd)
 
             break;
 
-        case MQTT_PKT_PUBCOMP:														//·¢ËÍPublishÏûÏ¢£¬Æ½Ì¨·µ»ØRec£¬Éè±¸»Ø¸´Rel£¬Æ½Ì¨ÔÙ·µ»ØµÄComp
+        case MQTT_PKT_PUBCOMP:														//ï¿½ï¿½ï¿½ï¿½Publishï¿½ï¿½Ï¢ï¿½ï¿½Æ½Ì¨ï¿½ï¿½ï¿½ï¿½Recï¿½ï¿½ï¿½è±¸ï¿½Ø¸ï¿½Relï¿½ï¿½Æ½Ì¨ï¿½Ù·ï¿½ï¿½Øµï¿½Comp
 
             if(MQTT_UnPacketPublishComp(cmd) == 0)
             {
@@ -356,7 +369,7 @@ void OneNet_RevPro(unsigned char *cmd)
 
             break;
 
-        case MQTT_PKT_SUBACK:														//·¢ËÍSubscribeÏûÏ¢µÄAck
+        case MQTT_PKT_SUBACK:														//ï¿½ï¿½ï¿½ï¿½Subscribeï¿½ï¿½Ï¢ï¿½ï¿½Ack
 
             if(MQTT_UnPacketSubscribe(cmd) == 0)
                 printf("Tips:	MQTT Subscribe OK\r\n");
@@ -365,7 +378,7 @@ void OneNet_RevPro(unsigned char *cmd)
 
             break;
 
-        case MQTT_PKT_UNSUBACK:														//·¢ËÍUnSubscribeÏûÏ¢µÄAck
+        case MQTT_PKT_UNSUBACK:														//ï¿½ï¿½ï¿½ï¿½UnSubscribeï¿½ï¿½Ï¢ï¿½ï¿½Ack
 
             if(MQTT_UnPacketUnSubscribe(cmd) == 0)
                 printf("Tips:	MQTT UnSubscribe OK\r\n");
@@ -379,23 +392,23 @@ void OneNet_RevPro(unsigned char *cmd)
             break;
     }
 
-    ESP01S_Clear();									//Çå¿Õ»º´æ
+    ESP01S_Clear();									//ï¿½ï¿½Õ»ï¿½ï¿½ï¿½
 
     if(result == -1)
         return;
 
-    dataPtr = strchr(req_payload, '}');					//ËÑË÷'}'
+    dataPtr = strchr(req_payload, '}');					//ï¿½ï¿½ï¿½ï¿½'}'
 
-    if(dataPtr != NULL && result != -1)					//Èç¹ûÕÒµ½ÁË
+    if(dataPtr != NULL && result != -1)					//ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½
     {
         dataPtr++;
 
-        while(*dataPtr >= '0' && *dataPtr <= '9')		//ÅÐ¶ÏÊÇ·ñÊÇÏÂ·¢µÄÃüÁî¿ØÖÆÊý¾Ý
+        while(*dataPtr >= '0' && *dataPtr <= '9')		//ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         {
             numBuf[num++] = *dataPtr++;
         }
 
-        num = atoi((const char *)numBuf);				//×ªÎªÊýÖµÐÎÊ½
+        num = atoi((const char *)numBuf);				//×ªÎªï¿½ï¿½Öµï¿½ï¿½Ê½
 
     }
 

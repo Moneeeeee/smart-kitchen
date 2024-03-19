@@ -13,7 +13,9 @@ const devicePubTopic = '/mysmartkitchen/pub' // 设备发布topic
 
 const mpSubTopic = devicePubTopic
 const mpPubTopic = deviceSubTopic
-
+// 在Page({})函数外定义 threshold 变量
+let tem_threshold = 40; // 默认阈值为50
+let mq2_threshold = 300; // 默认阈值为50
 Page({
   data: {
     client: null,
@@ -22,7 +24,10 @@ Page({
     MQ2:0,
     LED:false,
     Steer:false,
-    Relay:false
+    FUN:false,
+    WATER:false,
+    tem_threshold:0,
+    MQ2_threshold:0,
   },
   onLEDChange(event){
     const that  = this;
@@ -56,14 +61,14 @@ Page({
     });
   },
 
-  onRELAYChange(event){
+  onFUNChange(event){
     const that  = this;
     const sw = event.detail.value;
-    that.setData({ Relay: sw });
+    that.setData({ FUN: sw });
     // console.log(event.detail,value);
     // that.setData({LED:sw})
       that.data.client.publish(mpPubTopic, JSON.stringify({
-        target: "Relay",
+        target: "FUN",
         value: sw ? 1 : 0
       }), function (err) {
         if (!err) {
@@ -71,6 +76,58 @@ Page({
         }
     });
   },
+
+  onWATERChange(event){
+    const that  = this;
+    const sw = event.detail.value;
+    that.setData({ WATER: sw });
+    // console.log(event.detail,value);
+    // that.setData({LED:sw})
+      that.data.client.publish(mpPubTopic, JSON.stringify({
+        target: "WATER",
+        value: sw ? 1 : 0
+      }), function (err) {
+        if (!err) {
+          console.log('成功下发指令：' + (sw ? '打开喷淋' : '关闭喷淋'));
+        }
+    });
+  },
+
+  onTEMThresholdChange(event) {
+    const that = this;
+    const tem_threshold_read = event.detail.value;
+    // 将 number 类型的数据转换为 uint8 类型
+    const tem_threshold_uint8 = Math.round(tem_threshold_read); // 使用 Math.round() 进行四舍五入取整
+    that.setData({ tem_threshold: tem_threshold_read });
+    // 发送 uint8 类型的数据到 STM32 端
+    that.data.client.publish(mpPubTopic, JSON.stringify({
+      target: "tem_threshold",
+      value: tem_threshold_uint8 // 发送 uint8 类型的数据
+    }), function (err) {
+      if (!err) {
+        console.log('成功下发温度阈值:', tem_threshold_uint8);
+      }
+    });
+  },
+  
+
+  onMQ2ThresholdChange(event) {
+    const that = this;
+    const MQ2_threshold_read = event.detail.value;
+    that.setData({ MQ2_threshold: MQ2_threshold_read });
+    // console.log(event.detail,value);
+    // that.setData({LED:sw})
+      that.data.client.publish(mpPubTopic, JSON.stringify({
+        target: "MQ2_threshold",
+        value: MQ2_threshold_read
+      }), function (err) {
+        if (!err) {
+          console.log('成功下发阈值:', MQ2_threshold_read);
+        }
+    });
+  },
+  
+  
   //事件处理函数
   onShow() {
     const that = this
