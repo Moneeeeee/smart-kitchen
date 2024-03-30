@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Firmware.elf">
-				<Option output="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug"/>
+				<Option output="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -27,12 +27,12 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xB"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -41,15 +41,15 @@
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf"/>
-					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf"/>
+					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Firmware.elf/fast">
-				<Option output="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.elf" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug"/>
+				<Option output="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -57,12 +57,12 @@
 					<Add option="-DDEBUG"/>
 					<Add option="-DUSE_HAL_DRIVER"/>
 					<Add option="-DSTM32F103xB"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include"/>
-					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include"/>
+					<Add directory="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -71,412 +71,412 @@
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf/fast"/>
-					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 Firmware.elf/fast"/>
+					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug"/>
+				<Option working_dir="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Monee/DOCUME~1/PROGRA~1/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/BEEP.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/BEEP.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/Control.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/Control.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/DHT11.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/DHT11.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/Key.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/Key.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/LED.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/LED.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/OLED.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/OLED.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/OLED_Font.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/OLED_Font.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/Steer.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/Steer.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/adc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/adc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/cJSON.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/cJSON.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/gpio.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/gpio.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/i2c.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/i2c.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/main.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/main.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/retarget.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/retarget.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/stm32f1xx_hal_conf.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/stm32f1xx_hal_conf.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/stm32f1xx_it.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/stm32f1xx_it.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/tim.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/tim.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Inc/usart.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Inc/usart.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/BEEP.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/BEEP.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/Control.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/Control.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/DHT11.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/DHT11.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/Key.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/Key.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/LED.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/LED.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/OLED.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/OLED.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/OLED_Font.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/OLED_Font.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/Steer.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/Steer.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/adc.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/adc.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/cJSON.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/cJSON.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/gpio.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/gpio.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/i2c.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/i2c.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/main.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/main.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/retarget.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/retarget.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/stm32f1xx_hal_msp.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/stm32f1xx_hal_msp.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/stm32f1xx_it.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/stm32f1xx_it.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/syscalls.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/syscalls.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/sysmem.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/sysmem.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/system_stm32f1xx.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/system_stm32f1xx.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/tim.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/tim.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/usart.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/usart.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Startup/startup_stm32f103cbtx.s">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Startup/startup_stm32f103cbtx.s">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Device/ST/STM32F1xx/LICENSE.txt">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/cmsis_armcc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/cmsis_armcc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/cmsis_armclang.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/cmsis_armclang.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/cmsis_compiler.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/cmsis_compiler.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/cmsis_gcc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/cmsis_gcc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/cmsis_iccarm.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/cmsis_iccarm.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/cmsis_version.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/cmsis_version.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_armv8mbl.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_armv8mbl.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_armv8mml.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_armv8mml.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm0.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm0.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm0plus.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm0plus.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm1.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm1.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm23.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm23.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm3.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm3.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm33.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm33.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm4.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm4.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_cm7.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_cm7.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_sc000.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_sc000.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/core_sc300.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/core_sc300.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/mpu_armv7.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/mpu_armv7.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/mpu_armv8.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/mpu_armv8.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/Include/tz_context.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/Include/tz_context.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/CMSIS/LICENSE.txt">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/CMSIS/LICENSE.txt">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_adc_ex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_adc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_cortex.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_dma.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_exti.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_gpio.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_i2c.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_i2c.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_pwr.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_rcc.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/LICENSE.txt">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/Common.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/Common.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/MqttKit.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/MqttKit.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/MqttKit.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/MqttKit.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/SDK使用说明.txt">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/SDK使用说明.txt">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/esp8266.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/esp8266.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/esp8266.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/esp8266.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/onenet.c">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/onenet.c">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/onenet.h">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/onenet.h">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/STM32F103CBTX_FLASH.ld">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/STM32F103CBTX_FLASH.ld">
 			<Option target="Firmware.elf"/>
 		</Unit>
-		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/CMakeLists.txt">
+		<Unit filename="C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

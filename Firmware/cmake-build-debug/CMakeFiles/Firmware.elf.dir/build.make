@@ -52,10 +52,10 @@ RM = "C:\Program Files\JetBrains\CLion 2023.3.2\bin\cmake\win\x64\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware
+CMAKE_SOURCE_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Firmware.elf.dir/depend.make
@@ -69,591 +69,591 @@ include CMakeFiles/Firmware.elf.dir/progress.make
 include CMakeFiles/Firmware.elf.dir/flags.make
 
 CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/BEEP.c
+CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/BEEP.c
 CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\BEEP.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\BEEP.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\BEEP.c > CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\BEEP.c > CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/BEEP.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\BEEP.c -o CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\BEEP.c -o CMakeFiles\Firmware.elf.dir\Core\Src\BEEP.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/Control.c
+CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/Control.c
 CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Control.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Control.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Control.c > CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Control.c > CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/Control.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Control.c -o CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Control.c -o CMakeFiles\Firmware.elf.dir\Core\Src\Control.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/DHT11.c
+CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/DHT11.c
 CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\DHT11.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\DHT11.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\DHT11.c > CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\DHT11.c > CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/DHT11.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\DHT11.c -o CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\DHT11.c -o CMakeFiles\Firmware.elf.dir\Core\Src\DHT11.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/Key.c
+CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/Key.c
 CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Key.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Key.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Key.c > CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Key.c > CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/Key.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Key.c -o CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Key.c -o CMakeFiles\Firmware.elf.dir\Core\Src\Key.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/LED.c
+CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/LED.c
 CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\LED.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\LED.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\LED.c > CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\LED.c > CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/LED.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\LED.c -o CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\LED.c -o CMakeFiles\Firmware.elf.dir\Core\Src\LED.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/OLED.c
+CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/OLED.c
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\OLED.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\OLED.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\OLED.c > CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\OLED.c > CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/OLED.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\OLED.c -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\OLED.c -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/OLED_Font.c
+CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/OLED_Font.c
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\OLED_Font.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\OLED_Font.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\OLED_Font.c > CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\OLED_Font.c > CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/OLED_Font.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\OLED_Font.c -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\OLED_Font.c -o CMakeFiles\Firmware.elf.dir\Core\Src\OLED_Font.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/Steer.c
+CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/Steer.c
 CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Steer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Steer.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Steer.c > CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Steer.c > CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/Steer.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\Steer.c -o CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\Steer.c -o CMakeFiles\Firmware.elf.dir\Core\Src\Steer.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/adc.c
+CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/adc.c
 CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\adc.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\adc.c > CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\adc.c > CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/adc.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\adc.c -o CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\adc.c -o CMakeFiles\Firmware.elf.dir\Core\Src\adc.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/cJSON.c
+CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/cJSON.c
 CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\cJSON.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\cJSON.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\cJSON.c > CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\cJSON.c > CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/cJSON.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\cJSON.c -o CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\cJSON.c -o CMakeFiles\Firmware.elf.dir\Core\Src\cJSON.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/gpio.c
+CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/gpio.c
 CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\gpio.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\gpio.c > CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\gpio.c > CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/gpio.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\gpio.c -o CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\gpio.c -o CMakeFiles\Firmware.elf.dir\Core\Src\gpio.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/i2c.c
+CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/i2c.c
 CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\i2c.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\i2c.c > CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\i2c.c > CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/i2c.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\i2c.c -o CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\i2c.c -o CMakeFiles\Firmware.elf.dir\Core\Src\i2c.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/main.c
+CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/main.c
 CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\main.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\main.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\main.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/main.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\main.c > CMakeFiles\Firmware.elf.dir\Core\Src\main.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\main.c > CMakeFiles\Firmware.elf.dir\Core\Src\main.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/main.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\main.c -o CMakeFiles\Firmware.elf.dir\Core\Src\main.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\main.c -o CMakeFiles\Firmware.elf.dir\Core\Src\main.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/retarget.c
+CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/retarget.c
 CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\retarget.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\retarget.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\retarget.c > CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\retarget.c > CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/retarget.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\retarget.c -o CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\retarget.c -o CMakeFiles\Firmware.elf.dir\Core\Src\retarget.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/stm32f1xx_hal_msp.c
+CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\stm32f1xx_hal_msp.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\stm32f1xx_hal_msp.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\stm32f1xx_hal_msp.c > CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\stm32f1xx_hal_msp.c -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_hal_msp.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/stm32f1xx_it.c
+CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/stm32f1xx_it.c
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\stm32f1xx_it.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\stm32f1xx_it.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\stm32f1xx_it.c > CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\stm32f1xx_it.c > CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/stm32f1xx_it.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\stm32f1xx_it.c -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\stm32f1xx_it.c -o CMakeFiles\Firmware.elf.dir\Core\Src\stm32f1xx_it.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/syscalls.c
+CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/syscalls.c
 CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\syscalls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\syscalls.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\syscalls.c > CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\syscalls.c > CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/syscalls.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\syscalls.c -o CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\syscalls.c -o CMakeFiles\Firmware.elf.dir\Core\Src\syscalls.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/sysmem.c
+CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/sysmem.c
 CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\sysmem.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\sysmem.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\sysmem.c > CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\sysmem.c > CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/sysmem.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\sysmem.c -o CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\sysmem.c -o CMakeFiles\Firmware.elf.dir\Core\Src\sysmem.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/system_stm32f1xx.c
+CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/system_stm32f1xx.c
 CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\system_stm32f1xx.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\system_stm32f1xx.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\system_stm32f1xx.c > CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\system_stm32f1xx.c > CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/system_stm32f1xx.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\system_stm32f1xx.c -o CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\system_stm32f1xx.c -o CMakeFiles\Firmware.elf.dir\Core\Src\system_stm32f1xx.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/tim.c
+CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/tim.c
 CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\tim.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\tim.c > CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\tim.c > CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/tim.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\tim.c -o CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\tim.c -o CMakeFiles\Firmware.elf.dir\Core\Src\tim.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Src/usart.c
+CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Src/usart.c
 CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\usart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.obj.d -o CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\usart.c
 
 CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\usart.c > CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\usart.c > CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.i
 
 CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Core/Src/usart.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Src\usart.c -o CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Src\usart.c -o CMakeFiles\Firmware.elf.dir\Core\Src\usart.c.s
 
 CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Core/Startup/startup_stm32f103cbtx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\Firmware.elf.dir\Core\Startup\startup_stm32f103cbtx.s.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Startup\startup_stm32f103cbtx.s
+CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Startup/startup_stm32f103cbtx.s
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building ASM object CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\Firmware.elf.dir\Core\Startup\startup_stm32f103cbtx.s.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Startup\startup_stm32f103cbtx.s
 
 CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Startup\startup_stm32f103cbtx.s > CMakeFiles\Firmware.elf.dir\Core\Startup\startup_stm32f103cbtx.s.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Startup\startup_stm32f103cbtx.s > CMakeFiles\Firmware.elf.dir\Core\Startup\startup_stm32f103cbtx.s.i
 
 CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/Firmware.elf.dir/Core/Startup/startup_stm32f103cbtx.s.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Core\Startup\startup_stm32f103cbtx.s -o CMakeFiles\Firmware.elf.dir\Core\Startup\startup_stm32f103cbtx.s.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Core\Startup\startup_stm32f103cbtx.s -o CMakeFiles\Firmware.elf.dir\Core\Startup\startup_stm32f103cbtx.s.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_adc_ex.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_cortex.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_dma.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_exti.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_flash_ex.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_gpio_ex.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_i2c.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_pwr.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_rcc_ex.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_tim_ex.c.s
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj.d -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c > CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.i
 
 CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c -o CMakeFiles\Firmware.elf.dir\Drivers\STM32F1xx_HAL_Driver\Src\stm32f1xx_hal_uart.c.s
 
 CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/MqttKit.c
+CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/MqttKit.c
 CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj -MF CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.obj.d -o CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\MqttKit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.obj -MF CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.obj.d -o CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\MqttKit.c
 
 CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\MqttKit.c > CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\MqttKit.c > CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.i
 
 CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/NET/MqttKit.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\MqttKit.c -o CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\MqttKit.c -o CMakeFiles\Firmware.elf.dir\NET\MqttKit.c.s
 
 CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/esp8266.c
+CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/esp8266.c
 CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj -MF CMakeFiles\Firmware.elf.dir\NET\esp8266.c.obj.d -o CMakeFiles\Firmware.elf.dir\NET\esp8266.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\esp8266.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj -MF CMakeFiles\Firmware.elf.dir\NET\esp8266.c.obj.d -o CMakeFiles\Firmware.elf.dir\NET\esp8266.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\esp8266.c
 
 CMakeFiles/Firmware.elf.dir/NET/esp8266.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/NET/esp8266.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\esp8266.c > CMakeFiles\Firmware.elf.dir\NET\esp8266.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\esp8266.c > CMakeFiles\Firmware.elf.dir\NET\esp8266.c.i
 
 CMakeFiles/Firmware.elf.dir/NET/esp8266.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/NET/esp8266.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\esp8266.c -o CMakeFiles\Firmware.elf.dir\NET\esp8266.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\esp8266.c -o CMakeFiles\Firmware.elf.dir\NET\esp8266.c.s
 
 CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj: CMakeFiles/Firmware.elf.dir/flags.make
-CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/NET/onenet.c
+CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/NET/onenet.c
 CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj: CMakeFiles/Firmware.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj -MF CMakeFiles\Firmware.elf.dir\NET\onenet.c.obj.d -o CMakeFiles\Firmware.elf.dir\NET\onenet.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\onenet.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj -MF CMakeFiles\Firmware.elf.dir\NET\onenet.c.obj.d -o CMakeFiles\Firmware.elf.dir\NET\onenet.c.obj -c C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\onenet.c
 
 CMakeFiles/Firmware.elf.dir/NET/onenet.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Firmware.elf.dir/NET/onenet.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\onenet.c > CMakeFiles\Firmware.elf.dir\NET\onenet.c.i
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\onenet.c > CMakeFiles\Firmware.elf.dir\NET\onenet.c.i
 
 CMakeFiles/Firmware.elf.dir/NET/onenet.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Firmware.elf.dir/NET/onenet.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\NET\onenet.c -o CMakeFiles\Firmware.elf.dir\NET\onenet.c.s
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\NET\onenet.c -o CMakeFiles\Firmware.elf.dir\NET\onenet.c.s
 
 # Object files for target Firmware.elf
 Firmware_elf_OBJECTS = \
@@ -747,12 +747,12 @@ Firmware.elf: CMakeFiles/Firmware.elf.dir/NET/esp8266.c.obj
 Firmware.elf: CMakeFiles/Firmware.elf.dir/NET/onenet.c.obj
 Firmware.elf: CMakeFiles/Firmware.elf.dir/build.make
 Firmware.elf: CMakeFiles/Firmware.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking C executable Firmware.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Linking C executable Firmware.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Firmware.elf.dir\link.txt --verbose=$(VERBOSE)
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.hex"
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.bin"
-	arm-none-eabi-objcopy -Oihex C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.elf C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.hex
-	arm-none-eabi-objcopy -Obinary C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.elf C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/Firmware.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.hex"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "Building C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.bin"
+	arm-none-eabi-objcopy -Oihex C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.elf C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.hex
+	arm-none-eabi-objcopy -Obinary C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.elf C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/Firmware.bin
 
 # Rule to build all files generated by this target.
 CMakeFiles/Firmware.elf.dir/build: Firmware.elf
@@ -763,6 +763,6 @@ CMakeFiles/Firmware.elf.dir/clean:
 .PHONY : CMakeFiles/Firmware.elf.dir/clean
 
 CMakeFiles/Firmware.elf.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug C:\Users\Monee\Documents\Electronic-Design\Project\Kitchen\Firmware\cmake-build-debug\CMakeFiles\Firmware.elf.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug C:\Users\Monee\Documents\Electronic-Design\Project\Smart_Kitchen_Home\Firmware\cmake-build-debug\CMakeFiles\Firmware.elf.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Firmware.elf.dir/depend
 

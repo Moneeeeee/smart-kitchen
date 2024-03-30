@@ -1207,8 +1207,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug",
-		"source" : "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware"
+		"build" : "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug",
+		"source" : "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware"
 	},
 	"version" : 
 	{

@@ -102,7 +102,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Internal/FeatureTesting.cmake"
   "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/Platform/Generic.cmake"
   "C:/Program Files/JetBrains/CLion 2023.3.2/bin/cmake/win/x64/share/cmake-3.27/Modules/ProcessorCount.cmake"
-  "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/CMakeLists.txt"
+  "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/CMakeLists.txt"
   "CMakeFiles/3.27.8/CMakeASMCompiler.cmake"
   "CMakeFiles/3.27.8/CMakeCCompiler.cmake"
   "CMakeFiles/3.27.8/CMakeCXXCompiler.cmake"

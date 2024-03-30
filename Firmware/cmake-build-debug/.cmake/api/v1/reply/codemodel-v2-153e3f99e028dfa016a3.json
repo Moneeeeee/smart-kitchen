@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Firmware.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Firmware.elf-Debug-62c768fc7ca48abb8cc7.json",
+					"jsonFile" : "target-Firmware.elf-Debug-4e4d39a98e9b8771097b.json",
 					"name" : "Firmware.elf",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug",
-		"source" : "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware"
+		"build" : "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug",
+		"source" : "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware"
 	},
 	"version" : 
 	{

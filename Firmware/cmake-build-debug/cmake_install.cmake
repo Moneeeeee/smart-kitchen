@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware
+# Install script for directory: C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -1,3 +1,3 @@
-C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/CMakeFiles/Firmware.elf.dir
-C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Monee/Documents/Electronic-Design/Project/Kitchen/Firmware/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/CMakeFiles/Firmware.elf.dir
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/cmake-build-debug/CMakeFiles/rebuild_cache.dir
