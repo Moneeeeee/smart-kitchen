@@ -53,15 +53,27 @@
       </view>
     </view>
   </view>
-  <!-- 燃气 -->
+  <!-- 烟雾 -->
   <view class="data-card">
     <image class="data-card_icon" src="/icon/mq2.png"/>
     <view>
       <view class="data-card_title">
-        燃气
+        烟雾 
       </view>
       <view class="data-card_value">
         {{MQ2}}
+      </view>
+    </view>
+  </view>
+    <!-- 天燃气 -->
+    <view class="data-card">
+    <image class="data-card_icon" src="/icon/mq4.png"/>
+    <view>
+      <view class="data-card_title">
+       天然气 
+      </view>
+      <view class="data-card_value">
+        {{MQ4}}
       </view>
     </view>
   </view>
@@ -123,7 +135,16 @@
             <slider value="{{tem_threshold}}" bindchange="onTEMThresholdChange" min="0" max="100" step="1" />
         </view>
     </view>
- <!--气体 滑块 -->
+ <!--天然气 滑块 -->
+ <view class="data-card"> 
+        <view class="data-card_title">
+          天然气阈值
+        </view>
+        <view class="data-card_value">
+            <slider value="{{MQ2_threshold}}" bindchange="onMQ2ThresholdChange" min="0" max="100" step="1" />
+        </view>
+    </view>
+ <!--烟雾 滑块 -->
  <view class="data-card"> 
         <view class="data-card_title">
          烟雾阈值

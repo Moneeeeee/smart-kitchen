@@ -7,10 +7,12 @@
 #include "BEEP.h"
 #include "tim.h"
 #include "OLED.h"
+#include "stdio.h"
 volatile uint8_t Mode_Flag = 1;
 volatile uint8_t Steer_Flag = 0;
 volatile uint8_t Relay_Flag = 0;
 volatile uint8_t MQ2_Flag = 0; // 用于指示MQ2传感器值是否超过阈值的标志位
+volatile uint8_t MQ4_Flag = 0; // 用于指示MQ2传感器值是否超过阈值的标志位
 volatile uint8_t Tem_Flag = 0;
 volatile uint8_t FUN_Flag = 0;
 volatile uint8_t Water_Flag = 0;
@@ -21,9 +23,10 @@ volatile uint8_t Flash_Flag = 0;
 
 volatile uint8_t tem_threshold = 40;
 volatile uint16_t MQ2_threshold = 300;
+volatile uint16_t MQ4_threshold = 300;
 
 uint16_t ADC_MQ2;
-
+uint16_t ADC_MQ4;
 
 
 
@@ -48,22 +51,51 @@ void Steer_Init(void)
     Steer_Angle(90);
 }
 
-uint16_t ADC_IN_1(void) //ADC采集程序
-{
-    HAL_ADC_Start(&hadc1);//开始ADC采集
-    HAL_ADC_PollForConversion(&hadc1,100);//等待采集结束
-    if(HAL_IS_BIT_SET(HAL_ADC_GetState(&hadc1), HAL_ADC_STATE_REG_EOC))//读取ADC完成标志位
-    {
-        return HAL_ADC_GetValue(&hadc1);//读出ADC数值
+//uint16_t ADC_IN_1(void) //ADC采集程序
+//{
+//    HAL_ADC_Start(&hadc1);//开始ADC采集
+//    HAL_ADC_PollForConversion(&hadc1,100);//等待采集结束
+//    if(HAL_IS_BIT_SET(HAL_ADC_GetState(&hadc1), HAL_ADC_STATE_REG_EOC))//读取ADC完成标志位
+//    {
+//        return HAL_ADC_GetValue(&hadc1);//读出ADC数值
+//    }
+//    return 0;
+//}
+
+
+int16_t ADC_Read_Channel(ADC_HandleTypeDef* hadc, uint32_t channel) {
+    ADC_ChannelConfTypeDef sConfig = {0};
+
+    // 配置要读取的通道
+    sConfig.Channel = channel;
+    sConfig.Rank = ADC_REGULAR_RANK_1;
+    sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5; // 根据需要调整采样时间
+    if (HAL_ADC_ConfigChannel(hadc, &sConfig) != HAL_OK) {
+        // 错误处理
+        return -1;
     }
-    return 0;
+
+    // 开始ADC采集
+    HAL_ADC_Start(hadc);
+    // 等待采集结束
+    HAL_ADC_PollForConversion(hadc, 100);
+    // 读取ADC完成标志位
+    if (HAL_IS_BIT_SET(HAL_ADC_GetState(hadc), HAL_ADC_STATE_REG_EOC)) {
+        // 读出ADC数值
+        return HAL_ADC_GetValue(hadc);
+    }
+    return 0; // 如果没有成功读取，则返回0
 }
 
 
-void MQ2_Check()
+void MQ_Check()
 {
     HAL_ADCEx_Calibration_Start(&hadc1);
-    ADC_MQ2 = ADC_IN_1();
+
+    ADC_MQ2 = ADC_Read_Channel(&hadc1, ADC_CHANNEL_6);
+    ADC_MQ4 = ADC_Read_Channel(&hadc1, ADC_CHANNEL_7);
+
+
     MQ2_Flag = (ADC_MQ2 > MQ2_threshold) ? 1 : 0;
 }
 
@@ -108,7 +140,7 @@ void Water_Cotrol(uint8_t state)
 }
 
 void Update_System_Status() {
-    MQ2_Check();
+    MQ_Check();
     Tem_Check();
 
     if (Mode_Flag == 1) {
@@ -162,19 +194,27 @@ void Update_System_Status() {
 
 void OLED_Show(void)
 {
+
+    char displayString[30]; // 假设足够大以容纳整个字符串
     OLED_ShowNum(10, 6, temperature, 2, 12, 0);
-    OLED_ShowNum(50, 6, humidity, 2, 12, 0);
-    OLED_ShowNum(90, 6, ADC_MQ2, 3, 12, 0);
+    OLED_ShowNum(40, 6, humidity, 2, 12, 0);
+    OLED_ShowNum(70, 6, ADC_MQ2, 3, 12, 0);
+    OLED_ShowNum(100,6,ADC_MQ4,3,12, 0);
+
 
     OLED_ShowNum(110, 0, tem_threshold, 2, 12, 0);
     OLED_ShowNum(110, 2, MQ2_threshold, 3, 12, 0);
+    OLED_ShowNum(110, 4, MQ4_threshold, 3, 12, 0);
 
 
-    OLED_ShowString(0, 0, Mode_Flag == 1 ? "Mode:   Auto" : "Mode:   Manu", 12, 0);
-    OLED_ShowString(0, 2, Steer_Flag == 1 ? "STEER:    ON" : "STEER:   OFF", 12, 0);
+    OLED_ShowString(0, 0, Mode_Flag == 1 ? "Mode:  Auto" : "Mode:   Manu", 12, 0);
+    OLED_ShowString(0, 2, Steer_Flag == 1 ? "STEER:   ON" : "STEER:   OFF", 12, 0);
 
+    sprintf(displayString, "F/M:%s/%s", FUN_Flag == 1 ? "ON" : "OFF", Water_Flag == 1 ? "ON" : "OFF");
+//
+//    OLED_ShowString(0, 4, FUN_Flag == 1 ? "FAN: ON" : "FAN:OFF", 12, 0);
+//    OLED_ShowString(48, 4, Water_Flag == 1 ? "MOTO: ON" : "MOTO:OFF", 12, 0);
+    OLED_ShowString(0, 4, displayString, 12, 0);
 
-    OLED_ShowString(0, 4, FUN_Flag == 1 ? "FAN: ON" : "FAN:OFF", 12, 0);
-    OLED_ShowString(64, 4, Water_Flag == 1 ? "MOTO: ON" : "MOTO:OFF", 12, 0);
 }
 

@@ -59,12 +59,12 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED_Test_Pin GPIO_PIN_13
 #define LED_Test_GPIO_Port GPIOC
-#define Debug_TX_Pin GPIO_PIN_3
-#define Debug_TX_GPIO_Port GPIOA
 #define FAN_Pin GPIO_PIN_4
 #define FAN_GPIO_Port GPIOA
 #define MOTO_Pin GPIO_PIN_5
 #define MOTO_GPIO_Port GPIOA
+#define MQ_4_Pin GPIO_PIN_6
+#define MQ_4_GPIO_Port GPIOA
 #define MQ_2_Pin GPIO_PIN_7
 #define MQ_2_GPIO_Port GPIOA
 #define DHT11_Pin GPIO_PIN_0
@@ -73,6 +73,8 @@ void Error_Handler(void);
 #define BEEP_GPIO_Port GPIOB
 #define STEER_Pin GPIO_PIN_10
 #define STEER_GPIO_Port GPIOB
+#define Debug_TX_Pin GPIO_PIN_9
+#define Debug_TX_GPIO_Port GPIOA
 #define Debug_RX_Pin GPIO_PIN_10
 #define Debug_RX_GPIO_Port GPIOA
 #define KEY6_Pin GPIO_PIN_15
