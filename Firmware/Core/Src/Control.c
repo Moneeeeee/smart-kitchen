@@ -62,29 +62,19 @@ void Steer_Init(void)
 //    return 0;
 //}
 
-
-int16_t ADC_Read_Channel(ADC_HandleTypeDef* hadc, uint32_t channel) {
+uint16_t ADC_Read(uint32_t Channel)
+{
     ADC_ChannelConfTypeDef sConfig = {0};
-
-    // 配置要读取的通道
-    sConfig.Channel = channel;
+    sConfig.Channel = Channel;                                         /* 通道 */
     sConfig.Rank = ADC_REGULAR_RANK_1;
-    sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5; // 根据需要调整采样时间
-    if (HAL_ADC_ConfigChannel(hadc, &sConfig) != HAL_OK) {
-        // 错误处理
-        return -1;
+    sConfig.SamplingTime = ADC_SAMPLETIME_55CYCLES_5;                  /* 采样时间 */
+    if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
+    {
+        Error_Handler();
     }
-
-    // 开始ADC采集
-    HAL_ADC_Start(hadc);
-    // 等待采集结束
-    HAL_ADC_PollForConversion(hadc, 100);
-    // 读取ADC完成标志位
-    if (HAL_IS_BIT_SET(HAL_ADC_GetState(hadc), HAL_ADC_STATE_REG_EOC)) {
-        // 读出ADC数值
-        return HAL_ADC_GetValue(hadc);
-    }
-    return 0; // 如果没有成功读取，则返回0
+    HAL_ADC_Start(&hadc1);
+    HAL_ADC_PollForConversion(&hadc1, HAL_MAX_DELAY);
+    return (uint16_t)HAL_ADC_GetValue(&hadc1);
 }
 
 
@@ -92,11 +82,12 @@ void MQ_Check()
 {
     HAL_ADCEx_Calibration_Start(&hadc1);
 
-    ADC_MQ2 = ADC_Read_Channel(&hadc1, ADC_CHANNEL_6);
-    ADC_MQ4 = ADC_Read_Channel(&hadc1, ADC_CHANNEL_7);
+    ADC_MQ2 = ADC_Read(ADC_CHANNEL_6);
+    ADC_MQ4 = ADC_Read(ADC_CHANNEL_7);
 
 
     MQ2_Flag = (ADC_MQ2 > MQ2_threshold) ? 1 : 0;
+    MQ4_Flag = (ADC_MQ4 > MQ4_threshold) ? 1 : 0;
 }
 
 void Tem_Check()
@@ -147,22 +138,30 @@ void Update_System_Status() {
         if (Tem_Flag) {
             BEEP_On();
             Flash_Flag = 1;
-            Water_Cotrol(1);
-            Steer_Angle(50);
+//            Water_Cotrol(1);
+//            Steer_Angle(50);
         }
+        //温度指示LED+蜂鸣器
         if(MQ2_Flag){
             BEEP_On();
-            Flash_Flag = 1;
-            FUN_Cotrol(1);
+            Flash_Flag = 2;
+            FUN_Cotrol(1);//开启风扇
             Steer_Angle(50);
         }
-
+        //烟雾指示LED+蜂鸣器
+        if(MQ4_Flag){
+            BEEP_On();
+            Flash_Flag = 3;
+            Water_Cotrol(1);//消防喷淋
+            Steer_Angle(50);
+        }
+        //燃气指示LED+蜂鸣器
         if(Tem_Flag == 0 && MQ2_Flag == 0){
             BEEP_Off();
             Flash_Flag = 0;
             FUN_Cotrol(0);
-            Water_Cotrol(0);
-            Steer_Angle(90);
+            Water_Cotrol(0);//自动模式：风扇、消防喷淋系统关闭
+//            Steer_Angle(90);//燃气开关不包括，关闭后需按下按键手动才能开启
         }
 
 
@@ -170,15 +169,21 @@ void Update_System_Status() {
         if (Tem_Flag) {
             BEEP_On();
             Flash_Flag = 1;
-            Water_Cotrol(1);
-            Steer_Angle(50);
+//            Water_Cotrol(1);
+//            Steer_Angle(50);
         }
         if(MQ2_Flag){
             BEEP_On();
-            Flash_Flag = 1;
+            Flash_Flag = 2;
             FUN_Cotrol(1);
             Steer_Angle(50);
-         }
+        }
+        if(MQ4_Flag){
+            BEEP_On();
+            Flash_Flag = 3;
+            Water_Cotrol(1);
+            Steer_Angle(50);
+        }
 
          if(Tem_Flag == 0 && MQ2_Flag == 0){
            BEEP_Off();
@@ -207,10 +212,10 @@ void OLED_Show(void)
     OLED_ShowNum(110, 4, MQ4_threshold, 3, 12, 0);
 
 
-    OLED_ShowString(0, 0, Mode_Flag == 1 ? "Mode:  Auto" : "Mode:   Manu", 12, 0);
-    OLED_ShowString(0, 2, Steer_Flag == 1 ? "STEER:   ON" : "STEER:   OFF", 12, 0);
+    OLED_ShowString(0, 0, Mode_Flag == 1 ? "Mode:  Auto" : "Mode:  Manu", 12, 0);
+    OLED_ShowString(0, 2, Steer_Flag == 1 ?"STEER:   ON" : "STEER:  OFF", 12, 0);
 
-    sprintf(displayString, "F/M:%s/%s", FUN_Flag == 1 ? "ON" : "OFF", Water_Flag == 1 ? "ON" : "OFF");
+    sprintf(displayString, "F/M:%s/%s", FUN_Flag == 1 ? " ON" : "OFF", Water_Flag == 1 ? " ON" : "OFF");
 //
 //    OLED_ShowString(0, 4, FUN_Flag == 1 ? "FAN: ON" : "FAN:OFF", 12, 0);
 //    OLED_ShowString(48, 4, Water_Flag == 1 ? "MOTO: ON" : "MOTO:OFF", 12, 0);

@@ -53,6 +53,7 @@ __weak void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
             {
                 MQ2_threshold--;
             }
+
         }
 
     } else if (GPIO_Pin == KEY4_Pin && HAL_GPIO_ReadPin(GPIOB, KEY4_Pin) == GPIO_PIN_RESET) {
@@ -78,6 +79,25 @@ __weak void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
                 tem_threshold--;
             }
         }
+    }
+
+        // 检测按键3
+    else if (GPIO_Pin == KEY6_Pin && HAL_GPIO_ReadPin(GPIOA, KEY6_Pin) == GPIO_PIN_RESET) {
+        if (Mode_Flag == 0) {
+            //空闲
+        }
+        else if(Mode_Flag == 1){
+            if(Invert_Flag == 1)
+            {
+                MQ4_threshold++;
+            }
+            else if(Invert_Flag == 0)
+            {
+                MQ4_threshold--;
+            }
+
+        }
+
     }
 
 }

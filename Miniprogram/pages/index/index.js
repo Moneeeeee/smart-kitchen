@@ -29,6 +29,7 @@ Page({
     WATER:false,
     tem_threshold:0,
     MQ2_threshold:0,
+    MQ4_threshold:0,
   },
   onLEDChange(event){
     const that  = this;
@@ -123,11 +124,25 @@ Page({
         value: MQ2_threshold_read
       }), function (err) {
         if (!err) {
-          console.log('成功下发阈值:', MQ2_threshold_read);
+          console.log('成功下发烟雾阈值:', MQ2_threshold_read);
         }
     });
   },
-  
+  onMQ4ThresholdChange(event) {
+    const that = this;
+    const MQ4_threshold_read = event.detail.value;
+    that.setData({ MQ4_threshold: MQ4_threshold_read });
+    // console.log(event.detail,value);
+    // that.setData({LED:sw})
+      that.data.client.publish(mpPubTopic, JSON.stringify({
+        target: "MQ4_threshold",
+        value: MQ4_threshold_read
+      }), function (err) {
+        if (!err) {
+          console.log('成功下发天燃气阈值:', MQ4_threshold_read);
+        }
+    });
+  },
   
   //事件处理函数
   onShow() {

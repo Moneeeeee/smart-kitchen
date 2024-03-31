@@ -32,6 +32,6 @@ void Relay_Cotrol(uint8_t state);
 void FUN_Cotrol(uint8_t state);
 void Water_Cotrol(uint8_t state);
 uint16_t ADC_IN_1(void);
+uint16_t ADC_Read(uint32_t Channel);
 
-int16_t ADC_Read_Channel(ADC_HandleTypeDef* hadc, uint32_t channel) ;
 #endif //FIRMWARE_CONTROL_H

@@ -141,7 +141,7 @@
           天然气阈值
         </view>
         <view class="data-card_value">
-            <slider value="{{MQ2_threshold}}" bindchange="onMQ2ThresholdChange" min="0" max="100" step="1" />
+            <slider value="{{MQ4_threshold}}" bindchange="onMQ4ThresholdChange" min="0" max="100" step="1" />
         </view>
     </view>
  <!--烟雾 滑块 -->

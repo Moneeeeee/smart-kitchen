@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Monee/Documents/Electronic-Design/Project/Smart_Kitchen_Home/Firmware/Core/Startup/startup_stm32f103cbtx.s
+

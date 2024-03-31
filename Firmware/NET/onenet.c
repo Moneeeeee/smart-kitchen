@@ -210,55 +210,6 @@ void OneNet_RevPro(unsigned char *cmd)
 
             break;
 
-//        case MQTT_PKT_PUBLISH:                                                        //���յ�Publish��Ϣ
-//
-//            result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
-//            if (result == 0)
-//            {
-//                printf("topic: %s, topic_len: %d, payload: %s, payload_len: %d\r\n",
-//                       cmdid_topic, topic_len, req_payload, req_len);
-//
-//                json = cJSON_Parse(req_payload);
-//                if (!json) printf("Error before:[%s]\r\n", cJSON_GetErrorPtr());
-//                else {
-//
-//                    json_value = cJSON_GetObjectItem(json, "Steer");
-//                    if (json_value != NULL) // ȷ��json_value�ǿ�
-//                    {
-//                        if (json_value->valueint) // json�������ݵ���1
-//                        {
-//                            Steer_Angle(90);
-//                        } else
-//                        {
-//                            Steer_Angle(50);
-//                        }
-//                    }
-//
-//                    json_value = cJSON_GetObjectItem(json, "LED");
-//                    if (json_value->valueint)//json�������� ����0��Ϊ����
-//                    {
-//                        HAL_GPIO_TogglePin(GPIOC,GPIO_PIN_13);
-//                    }
-//
-//                    json_value = cJSON_GetObjectItem(json, "Relay");
-//                    if (json_value != NULL) // ȷ��json_value�ǿ�
-//                    {
-//                        // ���json_value��ֵ��������ο��Ƽ̵���
-//                        if (json_value->valueint) // json�������ݵ���1
-//                        {
-//                            Steer_Angle(90);
-//                            Relay_Cotrol(1);
-//                        }
-//                        else{
-//                            Steer_Angle(50);
-//                            Relay_Cotrol(0);
-//                        }
-//                    }
-//                }
-//                cJSON_Delete(json);
-//            }
-//            break;
-// ���յ���Publish��Ϣ����
         case MQTT_PKT_PUBLISH:
             result = MQTT_UnPacketPublish(cmd, &cmdid_topic, &topic_len, &req_payload, &req_len, &qos, &pkt_id);
             if (result == 0)
@@ -287,10 +238,14 @@ void OneNet_RevPro(unsigned char *cmd)
                         } else if (strcmp(json_target->valuestring, "LED") == 0) {
                             // ���� LED
                             if (json_value->valueint == 1) {
-                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_RESET); // �л� LED ״̬
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_RESET);//第一个LED
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_RESET);//第二个LED
+                                HAL_GPIO_WritePin(GPIOB,GPIO_PIN_11,GPIO_PIN_RESET);//第三个LED
 
                             }else if (json_value->valueint == 0) {
-                                HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13,GPIO_PIN_SET); // �л� LED ״̬
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_1,GPIO_PIN_SET);//第一个LED
+                                HAL_GPIO_WritePin(GPIOA,GPIO_PIN_0,GPIO_PIN_SET);//第二个LED
+                                HAL_GPIO_WritePin(GPIOB,GPIO_PIN_11,GPIO_PIN_SET);//第三个LED
                             }
                         } else if (strcmp(json_target->valuestring, "FUN") == 0) {
 
@@ -314,10 +269,12 @@ void OneNet_RevPro(unsigned char *cmd)
                             }
                         }else if (strcmp(json_target->valuestring, "tem_threshold") == 0) {
                             tem_threshold = json_value->valueint;
-                            }
                         }else if (strcmp(json_target->valuestring, "MQ2_threshold") == 0) {
                             MQ2_threshold = (int)json_value->valuedouble;
+                        }else if (strcmp(json_target->valuestring, "MQ4_threshold") == 0) {
+                            MQ4_threshold = (int) json_value->valuedouble;
                         }
+                    }
                     cJSON_Delete(json);
                 }
             }
